@@ -1,0 +1,54 @@
+# Example configuration for Medical RAG Chat Application
+# Copy this to config.yaml and modify as needed
+
+# Index Configuration
+index:
+  name: "medcorp_medembed"  # Available: medcorp_medembed, medembed, textbooks_medembed_flat
+  directory: null  # Will auto-detect if null
+
+# Embedding Model Configuration  
+embedding:
+  model: "abhinand/MedEmbed-large-v0.1"  # MedEmbed model for medical domain
+  device: "auto"  # Options: auto, cpu, cuda
+  
+# Retrieval Configuration
+retrieval:
+  mode: "hybrid"      # Options: hybrid, dense, bm25
+  k: 12              # Number of passages to retrieve
+  dense_k: 80        # FAISS results for hybrid mode
+  bm25_k: 400        # BM25 results for hybrid mode
+  rrf_k: 60          # RRF fusion parameter
+  
+# Evidence Processing
+evidence:
+  max_tokens: 1200   # Maximum tokens for evidence
+  tokenizer: "deepseek-ai/DeepSeek-R1"  # Tokenizer for token counting
+
+# LLM Configuration
+llm:
+  model: "thewindmom/llama3-med42-8b"  # Ollama model name
+  base_url: "http://localhost:11434"   # Ollama server URL
+  max_new_tokens: 512    # Maximum tokens to generate
+  temperature: 0.1       # Generation temperature (0.0 = deterministic)
+  top_p: 0.9            # Top-p sampling
+
+# Server Configuration  
+server:
+  host: "127.0.0.1"     # Server host
+  port: 8000            # Server port
+  workers: 4            # Number of worker threads
+  batch_size: 1         # Batch size for processing
+
+# Model Alternatives (uncomment to use)
+# Alternative embedding models:
+# embedding.model: "oscardp96/medcpt-query:latest"  # MedCPT for Ollama
+
+# Alternative LLM models:  
+# llm.model: "deepseek-ai/deepseek-r1:8b"
+# llm.model: "meditron-7b"
+
+# Performance tuning:
+# retrieval.k: 20                    # More passages for better coverage
+# evidence.max_tokens: 2000          # More evidence context  
+# llm.temperature: 0.0               # More deterministic responses
+# server.workers: 8                  # More parallel processing

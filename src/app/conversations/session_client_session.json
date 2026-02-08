@@ -1,0 +1,20 @@
+{
+  "conversation_id": "client_session",
+  "created_at": 1755415574.1634412,
+  "last_updated": 1755415823.7580142,
+  "user_ip": "192.168.1.105",
+  "messages": [
+    {
+      "id": "cc45e997-5a38-4c7f-923b-2dcbc34e6c3c",
+      "role": "user",
+      "content": "hi",
+      "timestamp": 1755415574.1634412,
+      "sources": null
+    },
+    {
+      "id": "40d6d984-79aa-4e6c-b945-943257ad2056",
+      "role": "assistant",
+      "content": "As a medical expert assistant, I cannot provide an answer based solely on the given conversation history or medical evidence provided. The information presented appears to be unrelated to any specific medical question or context. Please clarify or provide more relevant details for me to assist you accurately and professionally.",
+      "timestamp": 1755415578.4958313,
+      "sources": [
+        

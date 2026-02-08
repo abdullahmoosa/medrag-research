@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 Medical RAG Chat - Client</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: rgba(0,0,0,0.1);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .container {
+            flex: 1;
+            display: flex;
+            max-width: 1200px;
+            margin: 1rem auto;
+            width: calc(100% - 2rem);
+            gap: 1rem;
+        }
+        
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: 70vh;
+        }
+        
+        .message {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 15px;
+            max-width: 85%;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .bot-message {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .input-container {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            background: rgba(255,255,255,0.05);
+            border-radius: 0 0 15px 15px;
+        }
+        
+        .server-config {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        input[type="text"]:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        button {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 1.5rem;
+            color: #667eea;
+        }
+        
+        .sources {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 0.9rem;
+        }
+        
+        .source-item {
+            background: rgba(255,255,255,0.2);
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            border-radius: 10px;
+            border-left: 3px solid rgba(255,255,255,0.5);
+        }
+        
+        .connection-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff4444;
+        }
+        
+        .status-indicator.connected {
+            background: #44ff44;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏥 Medical RAG Chat Assistant</h1>
+        <p>Client Interface - Connected to Remote Server</p>
+        <div class="connection-status">
+            <div class="status-indicator" id="connectionStatus"></div>
+            <span id="connectionText">Connecting...</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="server-config">
+                <h3>🔧 Server Configuration</h3>
+                <label>Backend Server URL:</label>
+                <input type="text" id="serverUrl" value="http://192.168.1.104:8547" placeholder="http://server-ip:8547">
+                <button onclick="testConnection()">Test Connection</button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <strong>🏥 Medical Assistant:</strong><br>
+                    Hello! I'm your medical AI assistant. I can help answer questions about health, symptoms, treatments, and medical conditions using evidence-based information. How can I help you today?
+                </div>
+            </div>
+
+            <div class="loading" id="loading">
+                <div>🔄 Thinking...</div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-group">
+                    <input type="text" id="messageInput" placeholder="Ask me a medical question..." onkeypress="handleKeyPress(event)">
+                    <button onclick="sendMessage()" id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let conversationId = 'client_session';
+        let serverUrl = 'http://192.168.1.104:8547';
+        
+        // Update server URL when changed
+        document.getElementById('serverUrl').addEventListener('change', function() {
+            serverUrl = this.value;
+            testConnection();
+        });
+
+        // Test connection to server
+        async function testConnection() {
+            const statusIndicator = document.getElementById('connectionStatus');
+            const statusText = document.getElementById('connectionText');
+            
+            try {
+                const response = await fetch(`${serverUrl}/api/health`);
+                if (response.ok) {
+                    statusIndicator.classList.add('connected');
+                    statusText.textContent = 'Connected ✓';
+                } else {
+                    throw new Error('Server not responding');
+                }
+            } catch (error) {
+                statusIndicator.classList.remove('connected');
+                statusText.textContent = 'Connection Failed ✗';
+                console.error('Connection test failed:', error);
+            }
+        }
+
+        // Send message
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessage(message, 'user');
+            input.value = '';
+            
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('sendButton').disabled = true;
+            
+            try {
+                const response = await fetch(`${serverUrl}/api/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        conversation_id: conversationId
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Add bot response to chat
+                addMessage(data.response, 'bot', data.sources);
+                
+                // Update conversation ID
+                conversationId = data.conversation_id;
+                
+            } catch (error) {
+                addMessage('Sorry, I encountered an error. Please check your connection and try again.', 'bot');
+                console.error('Error:', error);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('sendButton').disabled = false;
+            }
+        }
+
+        // Add message to chat
+        function addMessage(content, sender, sources = null) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            let html = `<strong>${sender === 'user' ? '👤 You' : '🏥 Medical Assistant'}:</strong><br>${content}`;
+            
+            // Add sources if available
+            if (sources && sources.length > 0) {
+                html += '<div class="sources"><strong>📚 Sources:</strong>';
+                sources.forEach(source => {
+                    html += `<div class="source-item">
+                        <strong>${source.title || 'Medical Reference'}</strong><br>
+                        ${source.content ? source.content.substring(0, 200) + '...' : ''}
+                    </div>`;
+                });
+                html += '</div>';
+            }
+            
+            messageDiv.innerHTML = html;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Handle Enter key
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        // Test connection on load
+        window.onload = function() {
+            testConnection();
+        };
+    </script>
+</body>
+</html>

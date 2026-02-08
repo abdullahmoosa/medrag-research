@@ -1,0 +1,16 @@
+.venv/
+data.zip
+__pycache__/
+__MACOSX__
+*.pyc
+venv_crewai/
+.env
+data/
+models/
+tb_logs_medmcqa/
+tb_logs_medmcqa_v1/
+*venv/
+
+src/scripts/venv/
+
+processed_corpus*

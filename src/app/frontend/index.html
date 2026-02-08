@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical RAG Chat - Frontend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: rgba(0,0,0,0.1);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .connection-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff4444;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-indicator.connected {
+            background: #44ff44;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1400px;
+            margin: 1rem auto;
+            width: calc(100% - 2rem);
+            gap: 1rem;
+        }
+        
+        .sidebar {
+            width: 320px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            overflow-y: auto;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            max-height: calc(100vh - 300px);
+        }
+        
+        .message {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 15px;
+            max-width: 85%;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .bot-message {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .sources {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 0.9rem;
+        }
+        
+        .source-item {
+            background: rgba(255,255,255,0.2);
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            border-radius: 10px;
+            border-left: 3px solid rgba(255,255,255,0.5);
+        }
+        
+        .input-container {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            background: rgba(255,255,255,0.05);
+            border-radius: 0 0 15px 15px;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        input[type="text"]:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        button {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .config-section {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .config-section h3 {
+            margin-bottom: 0.75rem;
+            color: #333;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .config-section select,
+        .config-section input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+            border: 2px solid rgba(102, 126, 234, 0.2);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: white;
+            transition: border-color 0.3s;
+        }
+        
+        .config-section select:focus,
+        .config-section input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 1.5rem;
+            color: #667eea;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(102, 126, 234, 0.3);
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .server-config {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .server-config input {
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        
+        .stats {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 2rem;
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            margin: 2rem;
+        }
+        
+        .welcome-message h2 {
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0.5rem;
+                width: calc(100% - 1rem);
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+                max-height: 300px;
+            }
+            
+            .chat-container {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏥 Medical RAG Chat Assistant</h1>
+        <p>Frontend Client - Connect to Backend Server</p>
+        <div class="connection-status">
+            <div class="status-indicator" id="statusIndicator"></div>
+            <span id="connectionStatus">Disconnected</span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="server-config">
+                <h3>🌐 Backend Server</h3>
+                <label>Server URL:</label>
+                <input type="text" id="serverUrl" value="http://localhost:8547" placeholder="http://backend-server:8547">
+                <button onclick="connectToServer()">Connect</button>
+            </div>
+            
+            <div class="config-section">
+                <h3>📊 Index Selection</h3>
+                <select id="indexSelect">
+                    <option value="medcorp_medembed">MedCorp MedEmbed</option>
+                    <option value="medembed">MedEmbed</option>
+                    <option value="textbooks_medembed_flat">Textbooks MedEmbed</option>
+                </select>
+            </div>
+            
+            <div class="config-section">
+                <h3>🔍 Retrieval Mode</h3>
+                <select id="modeSelect">
+                    <option value="hybrid">Hybrid (FAISS + BM25)</option>
+                    <option value="dense">Dense (FAISS only)</option>
+                    <option value="bm25">BM25 only</option>
+                </select>
+            </div>
+            
+            <div class="config-section">
+                <h3>⚙️ Parameters</h3>
+                <label>Top-K Results:</label>
+                <input type="number" id="topK" value="12" min="1" max="50">
+                
+                <label>Dense K:</label>
+                <input type="number" id="denseK" value="80" min="10" max="200">
+                
+                <label>BM25 K:</label>
+                <input type="number" id="bm25K" value="400" min="50" max="1000">
+                
+                <label>Max Evidence Tokens:</label>
+                <input type="number" id="maxTokens" value="1200" min="200" max="3000">
+            </div>
+            
+            <div class="config-section">
+                <h3>🤖 LLM Model</h3>
+                <select id="llmModel">
+                    <option value="thewindmom/llama3-med42-8b">Llama3-Med42-8B</option>
+                    <option value="deepseek-ai/deepseek-r1:8b">DeepSeek-R1-8B</option>
+                    <option value="meditron-7b">Meditron-7B</option>
+                </select>
+            </div>
+            
+            <button onclick="updateConfig()">Update Configuration</button>
+            
+            <div class="stats" id="serverStats"></div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h2>🏥 Medical RAG Assistant</h2>
+                    <p>Please connect to the backend server first, then start asking medical questions.</p>
+                    <p>I'll provide evidence-based answers with source citations from medical literature.</p>
+                </div>
+            </div>
+            
+            <div class="loading" id="loadingIndicator">
+                <div class="spinner"></div>
+                <span>Searching medical literature...</span>
+            </div>
+            
+            <div class="input-container">
+                <div class="input-group">
+                    <input type="text" id="messageInput" placeholder="Connect to server first..." 
+                           onkeypress="handleKeyPress(event)" disabled>
+                    <button onclick="sendMessage()" id="sendButton" disabled>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let serverUrl = 'http://localhost:8547';
+        let isConnected = false;
+
+        // Connection management
+        async function connectToServer() {
+            const urlInput = document.getElementById('serverUrl');
+            serverUrl = urlInput.value.trim();
+            
+            if (!serverUrl) {
+                alert('Please enter a server URL');
+                return;
+            }
+            
+            // Remove trailing slash
+            if (serverUrl.endsWith('/')) {
+                serverUrl = serverUrl.slice(0, -1);
+            }
+            
+            try {
+                const response = await fetch(`${serverUrl}/api/health`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    isConnected = true;
+                    updateConnectionStatus(true);
+                    
+                    // Update server stats
+                    updateServerStats(data);
+                    
+                    // Enable chat
+                    document.getElementById('messageInput').disabled = false;
+                    document.getElementById('sendButton').disabled = false;
+                    document.getElementById('messageInput').placeholder = 'Ask a medical question...';
+                    
+                    // Clear welcome message and add connected message
+                    const chatMessages = document.getElementById('chatMessages');
+                    chatMessages.innerHTML = `
+                        <div class="message bot-message">
+                            <strong>Medical Assistant:</strong> ✅ Connected to backend server successfully! 
+                            I'm ready to answer your medical questions with evidence-based responses.
+                            <div class="stats">
+                                Server: ${serverUrl}<br>
+                                Index: ${data.index || 'Unknown'}<br>
+                                Model: ${data.llm_model || 'Unknown'}
+                            </div>
+                        </div>
+                    `;
+                    
+                } else {
+                    throw new Error(`Server responded with ${response.status}`);
+                }
+                
+            } catch (error) {
+                isConnected = false;
+                updateConnectionStatus(false);
+                alert(`Failed to connect to server: ${error.message}`);
+            }
+        }
+
+        function updateConnectionStatus(connected) {
+            const indicator = document.getElementById('statusIndicator');
+            const status = document.getElementById('connectionStatus');
+            
+            if (connected) {
+                indicator.classList.add('connected');
+                status.textContent = 'Connected';
+            } else {
+                indicator.classList.remove('connected');
+                status.textContent = 'Disconnected';
+            }
+        }
+
+        function updateServerStats(data) {
+            const statsDiv = document.getElementById('serverStats');
+            statsDiv.innerHTML = `
+                <strong>Server Info:</strong><br>
+                Status: ${data.status}<br>
+                Index: ${data.index || 'Unknown'}<br>
+                LLM: ${data.llm_model || 'Unknown'}<br>
+                Device: ${data.device || 'Unknown'}
+            `;
+        }
+
+        // Chat functionality
+        async function sendMessage() {
+            if (!isConnected) {
+                alert('Please connect to the backend server first');
+                return;
+            }
+
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            const chatMessages = document.getElementById('chatMessages');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            
+            // Add user message
+            const userDiv = document.createElement('div');
+            userDiv.className = 'message user-message';
+            userDiv.innerHTML = `<strong>You:</strong> ${message}`;
+            chatMessages.appendChild(userDiv);
+            
+            // Clear input and scroll
+            input.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Show loading
+            loadingIndicator.style.display = 'block';
+            
+            try {
+                const response = await fetch(`${serverUrl}/api/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        conversation_id: 'frontend_session'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                // Add bot response
+                const botDiv = document.createElement('div');
+                botDiv.className = 'message bot-message';
+                
+                let sourcesHtml = '';
+                if (data.sources && data.sources.length > 0) {
+                    sourcesHtml = '<div class="sources"><strong>📚 Sources:</strong>';
+                    data.sources.forEach((source, index) => {
+                        sourcesHtml += `
+                            <div class="source-item">
+                                <strong>[${index + 1}]</strong> ${source.title || 'Medical Literature'}<br>
+                                <small>${source.source || 'Unknown'} | Score: ${(source.score || 0).toFixed(3)}</small><br>
+                                <em>${(source.text || '').substring(0, 200)}...</em>
+                            </div>
+                        `;
+                    });
+                    sourcesHtml += '</div>';
+                }
+                
+                const stats = `
+                    <div class="stats">
+                        Sources: ${data.num_sources} | 
+                        Retrieval: ${data.retrieval_time?.toFixed(2)}s | 
+                        Generation: ${data.generation_time?.toFixed(2)}s
+                    </div>
+                `;
+                
+                botDiv.innerHTML = `
+                    <strong>Medical Assistant:</strong> ${data.response}
+                    ${sourcesHtml}
+                    ${stats}
+                `;
+                chatMessages.appendChild(botDiv);
+                
+            } catch (error) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'message bot-message';
+                errorDiv.innerHTML = `<strong>Error:</strong> Failed to get response from server: ${error.message}`;
+                chatMessages.appendChild(errorDiv);
+                
+                // Check if we lost connection
+                if (error.message.includes('fetch')) {
+                    isConnected = false;
+                    updateConnectionStatus(false);
+                    document.getElementById('messageInput').disabled = true;
+                    document.getElementById('sendButton').disabled = true;
+                }
+            }
+            
+            // Hide loading and scroll
+            loadingIndicator.style.display = 'none';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+        
+        async function updateConfig() {
+            if (!isConnected) {
+                alert('Please connect to the backend server first');
+                return;
+            }
+
+            const config = {
+                index_name: document.getElementById('indexSelect').value,
+                mode: document.getElementById('modeSelect').value,
+                k: parseInt(document.getElementById('topK').value),
+                dense_k: parseInt(document.getElementById('denseK').value),
+                bm25_k: parseInt(document.getElementById('bm25K').value),
+                max_evidence_tokens: parseInt(document.getElementById('maxTokens').value),
+                llm_model: document.getElementById('llmModel').value
+            };
+            
+            try {
+                const response = await fetch(`${serverUrl}/api/config`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(config)
+                });
+                
+                if (response.ok) {
+                    alert('Configuration updated successfully!');
+                    // Refresh server stats
+                    const healthResponse = await fetch(`${serverUrl}/api/health`);
+                    if (healthResponse.ok) {
+                        const data = await healthResponse.json();
+                        updateServerStats(data);
+                    }
+                } else {
+                    alert('Failed to update configuration');
+                }
+            } catch (error) {
+                alert(`Error updating configuration: ${error.message}`);
+            }
+        }
+
+        // Auto-connect on page load if default server is available
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                connectToServer();
+            }, 1000);
+        });
+
+        // Check connection periodically
+        setInterval(async () => {
+            if (isConnected) {
+                try {
+                    await fetch(`${serverUrl}/api/health`, { method: 'GET' });
+                } catch {
+                    isConnected = false;
+                    updateConnectionStatus(false);
+                    document.getElementById('messageInput').disabled = true;
+                    document.getElementById('sendButton').disabled = true;
+                    document.getElementById('messageInput').placeholder = 'Connection lost - please reconnect';
+                }
+            }
+        }, 30000); // Check every 30 seconds
+    </script>
+</body>
+</html>

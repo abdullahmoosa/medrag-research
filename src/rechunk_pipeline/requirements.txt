@@ -1,0 +1,19 @@
+# Medical Textbook Rechunking Pipeline Requirements
+
+# Core dependencies
+tiktoken>=0.5.0
+numpy>=1.24.0
+
+# Text processing
+sentence-transformers>=2.2.0
+
+# Indexing
+faiss-cpu>=1.7.4  # Use faiss-gpu if you have CUDA
+
+# Optional: Ollama backend
+# ollama>=0.1.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# mypy>=1.0.0

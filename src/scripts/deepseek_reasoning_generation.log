@@ -1,0 +1,164 @@
+2025-07-13 13:55:03,660 - INFO - Configuration: batch_size=5, start_batch=0, rate_limit=5, resume=False
+2025-07-13 13:55:03,660 - INFO - Progress reset - starting fresh
+2025-07-13 13:55:03,660 - INFO - Starting dataset processing: C:\Users\User\Downloads\nusrat\medrag\data\medmcqa\train_reasoning_sample.json -> C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135503.json
+2025-07-13 13:55:03,699 - INFO - Loaded 10000 samples, 2000 batches of size 5
+2025-07-13 13:55:03,700 - INFO - Starting from batch 1/2000
+2025-07-13 13:55:03,701 - INFO - Processing batch 1/2000 (samples 1-5)
+2025-07-13 13:55:03,701 - INFO - Processing sample 24651344-6124-425f-9c7b-ee3a68a1b947
+2025-07-13 13:55:03,701 - INFO - Processing sample 9016d9cf-33b8-422c-90f1-40a70fa071ed
+2025-07-13 13:55:03,701 - INFO - Processing sample 7de409bf-cd0a-429d-bd32-cc73478b5fe4
+2025-07-13 13:55:03,701 - INFO - Processing sample a326f547-3599-4348-a422-fc9a0ddf0be2
+2025-07-13 13:55:03,701 - INFO - Processing sample 51fe85a7-7ce9-4f4c-bc29-61cf41d1c5ac
+2025-07-13 13:55:10,688 - INFO - Sample 24651344-6124-425f-9c7b-ee3a68a1b947: Predicted=D, Correct=4, Match=True
+2025-07-13 13:55:22,446 - INFO - Sample a326f547-3599-4348-a422-fc9a0ddf0be2: Predicted=A, Correct=2, Match=False
+2025-07-13 13:55:29,098 - INFO - Sample 51fe85a7-7ce9-4f4c-bc29-61cf41d1c5ac: Predicted=A, Correct=4, Match=False
+2025-07-13 13:55:29,329 - INFO - Sample 9016d9cf-33b8-422c-90f1-40a70fa071ed: Predicted=A, Correct=2, Match=False
+2025-07-13 13:55:30,658 - INFO - Sample 7de409bf-cd0a-429d-bd32-cc73478b5fe4: Predicted=B, Correct=2, Match=True
+2025-07-13 13:55:30,659 - INFO - Saved 5 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135503.json
+2025-07-13 13:55:30,673 - INFO - Progress saved: batch 1
+2025-07-13 13:55:30,673 - INFO - Statistics: 5 processed, 40.0% accuracy, 0 API errors
+2025-07-13 13:55:30,674 - INFO - Tokens: 1565 input, 2841 output
+2025-07-13 13:55:32,686 - INFO - Processing batch 2/2000 (samples 6-10)
+2025-07-13 13:55:32,689 - INFO - Processing sample 361aea8d-c5ff-42fc-b08e-a21fce149bfc
+2025-07-13 13:55:32,691 - INFO - Processing sample 9d188a15-93d9-4321-86d6-e5ffe1ee248b
+2025-07-13 13:55:32,692 - INFO - Processing sample 0b29984a-a540-403c-8e48-33b35994d7ad
+2025-07-13 13:55:32,692 - INFO - Processing sample d3ef7b16-ce02-466c-8cc9-36bc1ce281d6
+2025-07-13 13:55:32,693 - INFO - Processing sample 21a5b862-5d26-4551-b7b5-2fdf6d2501b9
+2025-07-13 13:55:41,154 - INFO - Sample 361aea8d-c5ff-42fc-b08e-a21fce149bfc: Predicted=D, Correct=4, Match=True
+2025-07-13 13:55:52,417 - INFO - Sample 9d188a15-93d9-4321-86d6-e5ffe1ee248b: Predicted=D, Correct=4, Match=True
+2025-07-13 13:55:54,956 - INFO - Sample 21a5b862-5d26-4551-b7b5-2fdf6d2501b9: Predicted=D, Correct=4, Match=True
+2025-07-13 13:56:00,017 - INFO - Sample 0b29984a-a540-403c-8e48-33b35994d7ad: Predicted=D, Correct=4, Match=True
+2025-07-13 13:56:09,322 - INFO - Sample d3ef7b16-ce02-466c-8cc9-36bc1ce281d6: Predicted=B, Correct=2, Match=True
+2025-07-13 13:56:09,326 - INFO - Saved 10 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135503.json
+2025-07-13 13:56:09,326 - INFO - Progress saved: batch 2
+2025-07-13 13:56:09,326 - INFO - Statistics: 10 processed, 70.0% accuracy, 0 API errors
+2025-07-13 13:56:09,326 - INFO - Tokens: 3657 input, 5565 output
+2025-07-13 13:56:11,335 - INFO - Processing batch 3/2000 (samples 11-15)
+2025-07-13 13:56:11,337 - INFO - Processing sample ee8702fe-dcc5-4c85-973f-bbcacab6be37
+2025-07-13 13:56:11,340 - INFO - Processing sample e27eb880-cc1f-4a2a-b9d3-1bc7757f3153
+2025-07-13 13:56:11,340 - INFO - Processing sample 42d14ace-884e-4942-85c0-d05c87b17c00
+2025-07-13 13:56:11,340 - INFO - Processing sample 19462119-637b-4a50-9fc9-03bb4df2fc8a
+2025-07-13 13:56:11,340 - INFO - Processing sample 6608d04a-2fd4-421c-883e-9c5f3fdf5bab
+2025-07-13 13:56:28,594 - INFO - Sample 42d14ace-884e-4942-85c0-d05c87b17c00: Predicted=A, Correct=1, Match=True
+2025-07-13 13:56:30,777 - INFO - Sample 19462119-637b-4a50-9fc9-03bb4df2fc8a: Predicted=B, Correct=2, Match=True
+2025-07-13 13:56:33,920 - INFO - Sample ee8702fe-dcc5-4c85-973f-bbcacab6be37: Predicted=B, Correct=2, Match=True
+2025-07-13 13:56:47,561 - INFO - Configuration: batch_size=5, start_batch=0, rate_limit=50, resume=False
+2025-07-13 13:56:47,562 - INFO - Progress file deleted
+2025-07-13 13:56:47,562 - INFO - Progress reset - starting fresh
+2025-07-13 13:56:47,562 - INFO - Starting dataset processing: C:\Users\User\Downloads\nusrat\medrag\data\medmcqa\train_reasoning_sample.json -> C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:56:47,600 - INFO - Loaded 10000 samples, 2000 batches of size 5
+2025-07-13 13:56:47,600 - INFO - Starting from batch 1/2000
+2025-07-13 13:56:47,600 - INFO - Processing batch 1/2000 (samples 1-5)
+2025-07-13 13:56:47,600 - INFO - Processing sample 24651344-6124-425f-9c7b-ee3a68a1b947
+2025-07-13 13:56:47,601 - INFO - Processing sample 9016d9cf-33b8-422c-90f1-40a70fa071ed
+2025-07-13 13:56:47,601 - INFO - Processing sample 7de409bf-cd0a-429d-bd32-cc73478b5fe4
+2025-07-13 13:56:47,601 - INFO - Processing sample a326f547-3599-4348-a422-fc9a0ddf0be2
+2025-07-13 13:56:47,601 - INFO - Processing sample 51fe85a7-7ce9-4f4c-bc29-61cf41d1c5ac
+2025-07-13 13:57:03,005 - INFO - Sample 7de409bf-cd0a-429d-bd32-cc73478b5fe4: Predicted=A, Correct=2, Match=False
+2025-07-13 13:57:03,561 - INFO - Sample 24651344-6124-425f-9c7b-ee3a68a1b947: Predicted=D, Correct=4, Match=True
+2025-07-13 13:57:04,089 - INFO - Sample 51fe85a7-7ce9-4f4c-bc29-61cf41d1c5ac: Predicted=A, Correct=4, Match=False
+2025-07-13 13:57:04,923 - INFO - Sample 9016d9cf-33b8-422c-90f1-40a70fa071ed: Predicted=A, Correct=2, Match=False
+2025-07-13 13:57:12,386 - INFO - Sample a326f547-3599-4348-a422-fc9a0ddf0be2: Predicted=A, Correct=2, Match=False
+2025-07-13 13:57:12,389 - INFO - Saved 5 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:57:12,390 - INFO - Progress saved: batch 1
+2025-07-13 13:57:12,390 - INFO - Statistics: 5 processed, 20.0% accuracy, 0 API errors
+2025-07-13 13:57:12,391 - INFO - Tokens: 1564 input, 3436 output
+2025-07-13 13:57:14,395 - INFO - Processing batch 2/2000 (samples 6-10)
+2025-07-13 13:57:14,395 - INFO - Processing sample 361aea8d-c5ff-42fc-b08e-a21fce149bfc
+2025-07-13 13:57:14,395 - INFO - Processing sample 9d188a15-93d9-4321-86d6-e5ffe1ee248b
+2025-07-13 13:57:14,395 - INFO - Processing sample 0b29984a-a540-403c-8e48-33b35994d7ad
+2025-07-13 13:57:14,395 - INFO - Processing sample d3ef7b16-ce02-466c-8cc9-36bc1ce281d6
+2025-07-13 13:57:14,396 - INFO - Processing sample 21a5b862-5d26-4551-b7b5-2fdf6d2501b9
+2025-07-13 13:57:23,250 - INFO - Sample 0b29984a-a540-403c-8e48-33b35994d7ad: Predicted=D, Correct=4, Match=True
+2025-07-13 13:57:23,433 - INFO - Sample 361aea8d-c5ff-42fc-b08e-a21fce149bfc: Predicted=D, Correct=4, Match=True
+2025-07-13 13:57:29,204 - INFO - Sample 21a5b862-5d26-4551-b7b5-2fdf6d2501b9: Predicted=D, Correct=4, Match=True
+2025-07-13 13:57:40,246 - INFO - Sample d3ef7b16-ce02-466c-8cc9-36bc1ce281d6: Predicted=B, Correct=2, Match=True
+2025-07-13 13:57:40,482 - INFO - Sample 9d188a15-93d9-4321-86d6-e5ffe1ee248b: Predicted=D, Correct=4, Match=True
+2025-07-13 13:57:40,483 - INFO - Saved 10 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:57:40,484 - INFO - Progress saved: batch 2
+2025-07-13 13:57:40,484 - INFO - Statistics: 10 processed, 60.0% accuracy, 0 API errors
+2025-07-13 13:57:40,484 - INFO - Tokens: 3657 input, 7095 output
+2025-07-13 13:57:42,489 - INFO - Processing batch 3/2000 (samples 11-15)
+2025-07-13 13:57:42,490 - INFO - Processing sample ee8702fe-dcc5-4c85-973f-bbcacab6be37
+2025-07-13 13:57:42,493 - INFO - Processing sample e27eb880-cc1f-4a2a-b9d3-1bc7757f3153
+2025-07-13 13:57:42,494 - INFO - Processing sample 42d14ace-884e-4942-85c0-d05c87b17c00
+2025-07-13 13:57:42,494 - INFO - Processing sample 19462119-637b-4a50-9fc9-03bb4df2fc8a
+2025-07-13 13:57:42,494 - INFO - Processing sample 6608d04a-2fd4-421c-883e-9c5f3fdf5bab
+2025-07-13 13:57:50,561 - INFO - Sample ee8702fe-dcc5-4c85-973f-bbcacab6be37: Predicted=A, Correct=2, Match=False
+2025-07-13 13:57:53,415 - INFO - Sample 6608d04a-2fd4-421c-883e-9c5f3fdf5bab: Predicted=A, Correct=1, Match=True
+2025-07-13 13:58:00,244 - INFO - Sample 19462119-637b-4a50-9fc9-03bb4df2fc8a: Predicted=A, Correct=2, Match=False
+2025-07-13 13:58:05,228 - INFO - Sample e27eb880-cc1f-4a2a-b9d3-1bc7757f3153: Predicted=A, Correct=4, Match=False
+2025-07-13 13:58:27,515 - INFO - Sample 42d14ace-884e-4942-85c0-d05c87b17c00: Predicted=A, Correct=1, Match=True
+2025-07-13 13:58:27,519 - INFO - Saved 15 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:58:27,519 - INFO - Progress saved: batch 3
+2025-07-13 13:58:27,519 - INFO - Statistics: 15 processed, 53.3% accuracy, 0 API errors
+2025-07-13 13:58:27,519 - INFO - Tokens: 5805 input, 10921 output
+2025-07-13 13:58:29,534 - INFO - Processing batch 4/2000 (samples 16-20)
+2025-07-13 13:58:29,534 - INFO - Processing sample 6bf8eb83-803f-49fe-ba20-bc73c947b23c
+2025-07-13 13:58:29,535 - INFO - Processing sample 4e19b317-403e-4592-8575-8d222a8215fc
+2025-07-13 13:58:29,535 - INFO - Processing sample b23fac5c-30bc-4734-8d33-ba1a8ed8414b
+2025-07-13 13:58:29,535 - INFO - Processing sample c03eb24b-396a-4a97-ab90-885311c0f4b5
+2025-07-13 13:58:29,535 - INFO - Processing sample 875341ea-f358-446c-88d2-8c4221b2fe67
+2025-07-13 13:58:38,121 - INFO - Sample b23fac5c-30bc-4734-8d33-ba1a8ed8414b: Predicted=B, Correct=2, Match=True
+2025-07-13 13:58:39,586 - INFO - Sample 6bf8eb83-803f-49fe-ba20-bc73c947b23c: Predicted=A, Correct=3, Match=False
+2025-07-13 13:58:39,742 - INFO - Sample 4e19b317-403e-4592-8575-8d222a8215fc: Predicted=A, Correct=4, Match=False
+2025-07-13 13:58:40,470 - INFO - Sample c03eb24b-396a-4a97-ab90-885311c0f4b5: Predicted=A, Correct=1, Match=True
+2025-07-13 13:58:41,609 - INFO - Sample 875341ea-f358-446c-88d2-8c4221b2fe67: Predicted=A, Correct=1, Match=True
+2025-07-13 13:58:41,613 - INFO - Saved 20 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:58:41,613 - INFO - Progress saved: batch 4
+2025-07-13 13:58:41,614 - INFO - Statistics: 20 processed, 55.0% accuracy, 0 API errors
+2025-07-13 13:58:41,614 - INFO - Tokens: 7154 input, 13855 output
+2025-07-13 13:58:43,612 - INFO - Processing batch 5/2000 (samples 21-25)
+2025-07-13 13:58:43,613 - INFO - Processing sample 86e90e17-164c-4c1e-b49e-d9613a10bb7b
+2025-07-13 13:58:43,614 - INFO - Processing sample 991ed0d5-ab50-4f8e-a64e-d9c17403a8f8
+2025-07-13 13:58:43,615 - INFO - Processing sample 79059817-3349-41c9-96c3-2cf7c0d5a658
+2025-07-13 13:58:43,615 - INFO - Processing sample 70cd8e61-97f0-490f-989a-2bc4e93fad26
+2025-07-13 13:58:43,616 - INFO - Processing sample d2ca486c-200e-440a-a23b-2aaa9235e805
+2025-07-13 13:58:51,040 - INFO - Sample 991ed0d5-ab50-4f8e-a64e-d9c17403a8f8: Predicted=C, Correct=3, Match=True
+2025-07-13 13:58:52,442 - INFO - Sample 79059817-3349-41c9-96c3-2cf7c0d5a658: Predicted=A, Correct=1, Match=True
+2025-07-13 13:59:01,433 - INFO - Sample 86e90e17-164c-4c1e-b49e-d9613a10bb7b: Predicted=B, Correct=2, Match=True
+2025-07-13 13:59:06,049 - INFO - Sample d2ca486c-200e-440a-a23b-2aaa9235e805: Predicted=A, Correct=3, Match=False
+2025-07-13 13:59:06,788 - INFO - Sample 70cd8e61-97f0-490f-989a-2bc4e93fad26: Predicted=B, Correct=3, Match=False
+2025-07-13 13:59:06,792 - INFO - Saved 25 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 13:59:06,794 - INFO - Progress saved: batch 5
+2025-07-13 13:59:06,794 - INFO - Statistics: 25 processed, 56.0% accuracy, 0 API errors
+2025-07-13 13:59:06,794 - INFO - Tokens: 9081 input, 16774 output
+2025-07-13 13:59:08,805 - INFO - Processing batch 6/2000 (samples 26-30)
+2025-07-13 13:59:08,807 - INFO - Processing sample 9611fa7d-4b7c-4d75-b96c-77eb1316d53e
+2025-07-13 13:59:08,809 - INFO - Processing sample 29ea62b6-07bf-4ec3-b75f-402b72b923c8
+2025-07-13 13:59:08,810 - INFO - Processing sample 7d1a1619-3c5f-4c9a-9054-887692b3d313
+2025-07-13 13:59:08,810 - INFO - Processing sample c61d9724-a063-460d-809f-a150550de3a2
+2025-07-13 13:59:08,810 - INFO - Processing sample 36af1fd9-9ae7-4744-9330-49870ab566f0
+2025-07-13 13:59:23,414 - INFO - Sample c61d9724-a063-460d-809f-a150550de3a2: Predicted=A, Correct=2, Match=False
+2025-07-13 13:59:23,628 - INFO - Sample 29ea62b6-07bf-4ec3-b75f-402b72b923c8: Predicted=A, Correct=2, Match=False
+2025-07-13 13:59:30,336 - INFO - Sample 36af1fd9-9ae7-4744-9330-49870ab566f0: Predicted=C, Correct=4, Match=False
+2025-07-13 13:59:32,228 - INFO - Sample 9611fa7d-4b7c-4d75-b96c-77eb1316d53e: Predicted=A, Correct=4, Match=False
+2025-07-13 14:00:10,450 - ERROR - API request timeout
+2025-07-13 14:00:10,450 - WARNING - Failed to get response for sample 7d1a1619-3c5f-4c9a-9054-887692b3d313
+2025-07-13 14:00:10,454 - INFO - Saved 30 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 14:00:10,456 - INFO - Progress saved: batch 6
+2025-07-13 14:00:10,456 - INFO - Statistics: 29 processed, 48.3% accuracy, 1 API errors
+2025-07-13 14:00:10,456 - INFO - Tokens: 10303 input, 20646 output
+2025-07-13 14:00:12,464 - INFO - Processing batch 7/2000 (samples 31-35)
+2025-07-13 14:00:12,465 - INFO - Processing sample 88453a8b-1d32-41d7-a71d-65aea4153ab4
+2025-07-13 14:00:12,468 - INFO - Processing sample 4aecc89b-fb3b-4a8e-8a90-b8946a6b2606
+2025-07-13 14:00:12,468 - INFO - Processing sample 4d86d950-2334-42f6-b9f3-76c3c4f586f7
+2025-07-13 14:00:12,469 - INFO - Processing sample 1392f411-4ce7-4147-b271-dbe46e01ed6c
+2025-07-13 14:00:12,470 - INFO - Processing sample 331cea0b-ac6f-415c-aa0b-f5ba69729598
+2025-07-13 14:00:22,999 - INFO - Sample 88453a8b-1d32-41d7-a71d-65aea4153ab4: Predicted=D, Correct=4, Match=True
+2025-07-13 14:00:24,956 - INFO - Sample 4d86d950-2334-42f6-b9f3-76c3c4f586f7: Predicted=A, Correct=1, Match=True
+2025-07-13 14:00:25,922 - INFO - Sample 1392f411-4ce7-4147-b271-dbe46e01ed6c: Predicted=B, Correct=2, Match=True
+2025-07-13 14:00:26,000 - INFO - Sample 331cea0b-ac6f-415c-aa0b-f5ba69729598: Predicted=D, Correct=4, Match=True
+2025-07-13 14:00:36,566 - INFO - Sample 4aecc89b-fb3b-4a8e-8a90-b8946a6b2606: Predicted=A, Correct=4, Match=False
+2025-07-13 14:00:36,570 - INFO - Saved 35 processed samples to C:\Users\User\Downloads\nusrat\medrag\evaluation_results\reasoning_dataset_generation\train_reasoning_generated_20250713_135647.json
+2025-07-13 14:00:36,571 - INFO - Progress saved: batch 7
+2025-07-13 14:00:36,572 - INFO - Statistics: 34 processed, 52.9% accuracy, 1 API errors
+2025-07-13 14:00:36,572 - INFO - Tokens: 11758 input, 23565 output
+2025-07-13 14:00:38,578 - INFO - Processing batch 8/2000 (samples 36-40)
+2025-07-13 14:00:38,580 - INFO - Processing sample 4d4a0b43-56dc-40c3-82c4-8c5290ec147c
+2025-07-13 14:00:38,582 - INFO - Processing sample f9d84ba7-c55e-4c27-8b21-5821cdb9d0c5
+2025-07-13 14:00:38,583 - INFO - Processing sample 721896e1-42f1-4ba5-b5b3-b9f8f528b108
+2025-07-13 14:00:38,583 - INFO - Processing sample 994b385e-a9fe-43e8-84c1-e7bbeec0c063
+2025-07-13 14:00:38,583 - INFO - Processing sample 31fce052-cd38-4909-99e1-bbfb283723c1
+2025-07-13 14:00:48,718 - INFO - Sample 31fce052-cd38-4909-99e1-bbfb283723c1: Predicted=B, Correct=2, Match=True
+2025-07-13 14:00:50,070 - INFO - Sample 721896e1-42f1-4ba5-b5b3-b9f8f528b108: Predicted=D, Correct=3, Match=False
