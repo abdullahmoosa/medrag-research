@@ -224,7 +224,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument(
         "--reranker-model",
         type=str,
-        default="BAAI/bge-reranker-large",
+        default="NeuML/biomedbert-base-reranker",
         help="Reranker model name",
     )
     ap.add_argument(
