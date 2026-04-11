@@ -1,4 +1,3 @@
-
 ## Project Description
 
 **MedRAG Research** is a comprehensive research framework for medical question-answering systems powered by Retrieval-Augmented Generation (RAG). It combines advanced retrieval techniques with medical-domain-specific language models to deliver evidence-based answers grounded in medical literature.
@@ -38,3 +37,15 @@ The framework enables systematic research into:
 - **Evidence-Based**: All responses include source citations and relevance scores from medical literature
 
 This is a research-grade project suitable for academic investigations into medical AI, information retrieval, and knowledge-grounded question-answering systems.
+
+## Citation
+
+If you use MedRAG Research in your work, please cite our paper:
+
+```bibtex
+@article{sultana2026medrag,
+  title={A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering},
+  author={Sultana, Nusrat and Moosa, Abdullah Muhammad and Rahman, Kazi Afzalur and Banik, Sajal Chandra},
+  journal={arXiv preprint arXiv:2604.07274},
+  year={2026}
+}
