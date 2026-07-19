@@ -1,0 +1,10 @@
+{
+  "figure_id": "figure4_error_transition_chart",
+  "input_table": "paper/artifacts/tables/error_transition_summary.csv",
+  "x": "transition",
+  "y": "count",
+  "group_by": "comparison",
+  "filter": "comparison in ['zero_shot','cot']",
+  "caption_short": "Error transition counts.",
+  "caption_long": "Transition counts (wrong->correct, correct->wrong, unchanged) for key head-to-head comparisons."
+}

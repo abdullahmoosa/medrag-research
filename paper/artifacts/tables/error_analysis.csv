@@ -1,0 +1,1274 @@
+example_id,gold,pred_best_rag,pred_baseline,changed_correctness,question_type,notes
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,E,C,D,unchanged_wrong,treatment,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,B,B,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,A,A,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,E,D,E,correct_to_wrong,negation,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,B,A,unchanged_wrong,negation,Both incorrect
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,D,E,correct_to_wrong,mechanism,RAG introduced error
+unknown,E,A,E,correct_to_wrong,other,RAG introduced error
+unknown,B,C,A,unchanged_wrong,treatment,Both incorrect
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,C,A,C,correct_to_wrong,treatment,RAG introduced error
+unknown,A,D,A,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,B,B,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,mechanism,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,D,D,unchanged_wrong,other,Both incorrect
+unknown,E,C,E,correct_to_wrong,treatment,RAG introduced error
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,E,A,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,E,D,D,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,E,C,E,correct_to_wrong,treatment,RAG introduced error
+unknown,A,D,A,correct_to_wrong,treatment,RAG introduced error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,C,D,D,unchanged_wrong,other,Both incorrect
+unknown,B,C,D,unchanged_wrong,other,Both incorrect
+unknown,E,E,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,B,A,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,E,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,A,E,E,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,C,D,A,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,D,B,D,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,B,A,correct_to_wrong,mechanism,RAG introduced error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,A,C,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,D,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,A,A,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,C,A,C,correct_to_wrong,diagnosis,RAG introduced error
+unknown,C,C,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,C,C,B,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,A,C,correct_to_wrong,treatment,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,A,A,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,C,A,C,correct_to_wrong,treatment,RAG introduced error
+unknown,A,D,D,unchanged_wrong,other,Both incorrect
+unknown,E,E,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,B,B,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,E,C,unchanged_wrong,mechanism,Both incorrect
+unknown,D,B,D,correct_to_wrong,mechanism,RAG introduced error
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,E,E,,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,B,C,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,E,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,A,A,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,D,B,correct_to_wrong,diagnosis,RAG introduced error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,D,D,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,mechanism,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,E,A,E,correct_to_wrong,other,RAG introduced error
+unknown,A,B,A,correct_to_wrong,treatment,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,D,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,mechanism,Both correct
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,D,D,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,B,E,unchanged_wrong,other,Both incorrect
+unknown,A,D,A,correct_to_wrong,diagnosis,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,D,E,D,correct_to_wrong,other,RAG introduced error
+unknown,E,A,B,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,D,A,D,correct_to_wrong,treatment,RAG introduced error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,D,A,unchanged_wrong,other,Both incorrect
+unknown,E,B,A,unchanged_wrong,other,Both incorrect
+unknown,B,C,E,unchanged_wrong,other,Both incorrect
+unknown,E,C,C,unchanged_wrong,mechanism,Both incorrect
+unknown,B,A,A,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,mechanism,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,C,D,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,E,C,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,A,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,E,B,C,unchanged_wrong,treatment,Both incorrect
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,E,E,unchanged_wrong,negation,Both incorrect
+unknown,D,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,E,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,D,B,correct_to_wrong,mechanism,RAG introduced error
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,C,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,B,D,D,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,B,A,A,unchanged_wrong,other,Both incorrect
+unknown,D,A,D,correct_to_wrong,negation,RAG introduced error
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,C,C,unchanged_wrong,negation,Both incorrect
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,A,E,A,correct_to_wrong,treatment,RAG introduced error
+unknown,D,D,C,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,B,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,A,B,A,correct_to_wrong,diagnosis,RAG introduced error
+unknown,E,E,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,E,E,unchanged_wrong,negation,Both incorrect
+unknown,B,A,C,unchanged_wrong,negation,Both incorrect
+unknown,A,D,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,A,A,unchanged_wrong,other,Both incorrect
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,B,A,unchanged_wrong,other,Both incorrect
+unknown,A,B,A,correct_to_wrong,diagnosis,RAG introduced error
+unknown,D,D,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,B,D,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,A,A,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,D,A,D,correct_to_wrong,other,RAG introduced error
+unknown,E,B,B,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,D,D,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,C,B,unchanged_wrong,negation,Both incorrect
+unknown,B,D,B,correct_to_wrong,other,RAG introduced error
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,E,D,E,correct_to_wrong,other,RAG introduced error
+unknown,D,A,D,correct_to_wrong,negation,RAG introduced error
+unknown,C,C,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,D,D,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,D,D,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,D,D,unchanged_wrong,treatment,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,D,D,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,B,C,D,unchanged_wrong,mechanism,Both incorrect
+unknown,D,B,E,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,C,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,A,B,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,A,A,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,B,A,B,correct_to_wrong,treatment,RAG introduced error
+unknown,D,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,B,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,A,A,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,B,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,D,B,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,A,D,correct_to_wrong,other,RAG introduced error
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,D,E,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,B,C,unchanged_wrong,mechanism,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,B,C,E,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,A,A,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,B,C,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,E,B,unchanged_wrong,negation,Both incorrect
+unknown,C,B,B,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,D,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,D,B,correct_to_wrong,other,RAG introduced error
+unknown,D,A,D,correct_to_wrong,mechanism,RAG introduced error
+unknown,E,A,E,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,B,D,unchanged_wrong,negation,Both incorrect
+unknown,C,D,E,unchanged_wrong,negation,Both incorrect
+unknown,A,A,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,E,C,correct_to_wrong,other,RAG introduced error
+unknown,A,B,E,unchanged_wrong,diagnosis,Both incorrect
+unknown,A,B,E,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,D,A,correct_to_wrong,negation,RAG introduced error
+unknown,E,A,B,unchanged_wrong,other,Both incorrect
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,C,D,unchanged_wrong,other,Both incorrect
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,A,A,B,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,B,A,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,E,D,C,unchanged_wrong,treatment,Both incorrect
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,E,A,B,unchanged_wrong,treatment,Both incorrect
+unknown,E,A,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,C,B,unchanged_wrong,negation,Both incorrect
+unknown,E,C,E,correct_to_wrong,diagnosis,RAG introduced error
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,D,C,D,correct_to_wrong,other,RAG introduced error
+unknown,B,B,A,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,B,E,unchanged_wrong,negation,Both incorrect
+unknown,C,A,E,unchanged_wrong,treatment,Both incorrect
+unknown,A,E,B,unchanged_wrong,treatment,Both incorrect
+unknown,E,B,E,correct_to_wrong,mechanism,RAG introduced error
+unknown,E,E,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,A,E,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,C,D,correct_to_wrong,other,RAG introduced error
+unknown,A,E,A,correct_to_wrong,treatment,RAG introduced error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,E,B,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,C,B,correct_to_wrong,other,RAG introduced error
+unknown,B,A,C,unchanged_wrong,other,Both incorrect
+unknown,C,E,C,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,E,D,E,correct_to_wrong,other,RAG introduced error
+unknown,A,B,D,unchanged_wrong,other,Both incorrect
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,C,B,B,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,mechanism,Both correct
+unknown,A,C,A,correct_to_wrong,negation,RAG introduced error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,A,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,A,D,correct_to_wrong,diagnosis,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,B,D,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,D,B,correct_to_wrong,other,RAG introduced error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,E,D,correct_to_wrong,negation,RAG introduced error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,E,B,C,unchanged_wrong,treatment,Both incorrect
+unknown,D,D,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,mechanism,Both correct
+unknown,B,A,B,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,B,D,unchanged_wrong,negation,Both incorrect
+unknown,C,A,A,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,D,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,C,C,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,E,A,A,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,E,E,unchanged_wrong,negation,Both incorrect
+unknown,C,D,B,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,A,B,E,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,C,B,correct_to_wrong,other,RAG introduced error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,E,D,correct_to_wrong,diagnosis,RAG introduced error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,E,D,E,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,mechanism,Both correct
+unknown,A,E,E,unchanged_wrong,diagnosis,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,C,A,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,B,E,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,B,C,E,unchanged_wrong,negation,Both incorrect
+unknown,C,C,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,A,D,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,D,C,B,unchanged_wrong,treatment,Both incorrect
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,E,B,B,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,E,D,unchanged_wrong,other,Both incorrect
+unknown,D,B,B,unchanged_wrong,negation,Both incorrect
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,A,A,B,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,B,C,unchanged_wrong,other,Both incorrect
+unknown,A,C,D,unchanged_wrong,negation,Both incorrect
+unknown,D,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,D,A,unchanged_wrong,other,Both incorrect
+unknown,E,C,A,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,A,A,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,D,A,unchanged_wrong,negation,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,A,A,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,B,C,E,unchanged_wrong,other,Both incorrect
+unknown,D,A,A,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,B,B,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,A,B,unchanged_wrong,negation,Both incorrect
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,C,D,correct_to_wrong,negation,RAG introduced error
+unknown,E,B,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,B,C,E,unchanged_wrong,other,Both incorrect
+unknown,E,B,D,unchanged_wrong,other,Both incorrect
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,D,D,B,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,A,A,C,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,mechanism,Both incorrect
+unknown,E,A,D,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,D,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,A,E,correct_to_wrong,other,RAG introduced error
+unknown,E,E,C,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,B,B,A,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,A,C,A,correct_to_wrong,negation,RAG introduced error
+unknown,A,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,,C,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,A,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,mechanism,Both correct
+unknown,A,A,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,A,D,A,correct_to_wrong,treatment,RAG introduced error
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,B,D,A,unchanged_wrong,other,Both incorrect
+unknown,E,A,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,B,C,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,C,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,C,A,E,unchanged_wrong,negation,Both incorrect
+unknown,C,C,E,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,B,D,unchanged_wrong,other,Both incorrect
+unknown,E,D,A,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,E,E,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,D,A,correct_to_wrong,negation,RAG introduced error
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,mechanism,Both incorrect
+unknown,E,B,D,unchanged_wrong,negation,Both incorrect
+unknown,E,B,E,correct_to_wrong,diagnosis,RAG introduced error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,E,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,C,A,correct_to_wrong,negation,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,A,A,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,B,B,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,C,B,correct_to_wrong,negation,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,C,C,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,C,A,correct_to_wrong,other,RAG introduced error
+unknown,C,D,B,unchanged_wrong,other,Both incorrect
+unknown,E,E,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,D,D,D,unchanged_correct,mechanism,Both correct
+unknown,E,E,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,C,B,correct_to_wrong,negation,RAG introduced error
+unknown,D,A,C,unchanged_wrong,other,Both incorrect
+unknown,D,C,D,correct_to_wrong,mechanism,RAG introduced error
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,E,C,B,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,D,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,mechanism,Both correct
+unknown,C,C,A,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,E,A,E,correct_to_wrong,other,RAG introduced error
+unknown,C,C,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,E,A,D,unchanged_wrong,other,Both incorrect
+unknown,D,D,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,B,D,unchanged_wrong,negation,Both incorrect
+unknown,E,E,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,A,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,A,D,D,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,E,E,unchanged_wrong,negation,Both incorrect
+unknown,A,B,B,unchanged_wrong,negation,Both incorrect
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,A,C,B,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,A,B,correct_to_wrong,mechanism,RAG introduced error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,A,C,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,A,B,unchanged_wrong,other,Both incorrect
+unknown,D,C,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,A,D,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,D,A,E,unchanged_wrong,treatment,Both incorrect
+unknown,D,A,D,correct_to_wrong,other,RAG introduced error
+unknown,D,C,E,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,C,D,correct_to_wrong,diagnosis,RAG introduced error
+unknown,C,C,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,B,B,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,A,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,B,A,D,unchanged_wrong,other,Both incorrect
+unknown,E,C,D,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,mechanism,Both correct
+unknown,C,D,C,correct_to_wrong,other,RAG introduced error
+unknown,B,B,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,A,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,E,B,correct_to_wrong,other,RAG introduced error
+unknown,A,B,C,unchanged_wrong,other,Both incorrect
+unknown,C,B,C,correct_to_wrong,diagnosis,RAG introduced error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,B,B,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,E,A,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,B,E,correct_to_wrong,other,RAG introduced error
+unknown,A,A,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,E,E,A,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,B,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,E,E,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,E,C,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,E,C,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,A,E,B,unchanged_wrong,other,Both incorrect
+unknown,B,A,E,unchanged_wrong,other,Both incorrect
+unknown,B,A,E,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,D,B,B,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,B,C,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,D,C,D,correct_to_wrong,mechanism,RAG introduced error
+unknown,A,A,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,D,D,unchanged_wrong,other,Both incorrect
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,C,A,correct_to_wrong,other,RAG introduced error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,A,C,C,unchanged_wrong,other,Both incorrect
+unknown,B,C,B,correct_to_wrong,negation,RAG introduced error
+unknown,D,B,D,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,C,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,C,A,A,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,mechanism,Both correct
+unknown,C,D,C,correct_to_wrong,negation,RAG introduced error
+unknown,C,A,C,correct_to_wrong,treatment,RAG introduced error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,C,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,E,A,A,unchanged_wrong,other,Both incorrect
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,B,D,unchanged_wrong,negation,Both incorrect
+unknown,E,B,E,correct_to_wrong,other,RAG introduced error
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,A,D,B,unchanged_wrong,other,Both incorrect
+unknown,D,E,D,correct_to_wrong,treatment,RAG introduced error
+unknown,D,A,B,unchanged_wrong,treatment,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,B,B,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,B,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,E,E,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,B,C,unchanged_wrong,other,Both incorrect
+unknown,E,E,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,A,B,correct_to_wrong,treatment,RAG introduced error
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,A,E,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,D,C,D,correct_to_wrong,treatment,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,E,E,unchanged_wrong,other,Both incorrect
+unknown,D,C,C,unchanged_wrong,other,Both incorrect
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,B,A,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,A,C,D,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,E,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,C,D,D,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,C,D,A,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,B,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,B,A,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,D,A,correct_to_wrong,treatment,RAG introduced error
+unknown,C,A,C,correct_to_wrong,other,RAG introduced error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,C,A,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,E,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,E,A,E,correct_to_wrong,negation,RAG introduced error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,B,B,unchanged_wrong,treatment,Both incorrect
+unknown,D,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,B,A,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,A,D,correct_to_wrong,treatment,RAG introduced error
+unknown,C,D,C,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,A,D,unchanged_wrong,other,Both incorrect
+unknown,B,E,B,correct_to_wrong,other,RAG introduced error
+unknown,A,A,D,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,E,E,unchanged_wrong,other,Both incorrect
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,D,A,correct_to_wrong,other,RAG introduced error
+unknown,B,B,B,unchanged_correct,mechanism,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,A,D,E,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,D,D,A,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,C,E,C,correct_to_wrong,other,RAG introduced error
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,C,D,A,unchanged_wrong,negation,Both incorrect
+unknown,C,C,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,B,D,correct_to_wrong,other,RAG introduced error
+unknown,D,B,B,unchanged_wrong,negation,Both incorrect
+unknown,B,D,D,unchanged_wrong,other,Both incorrect
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,A,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,C,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,D,A,unchanged_wrong,other,Both incorrect
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,A,B,correct_to_wrong,other,RAG introduced error
+unknown,B,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,A,D,correct_to_wrong,negation,RAG introduced error
+unknown,A,D,A,correct_to_wrong,other,RAG introduced error
+unknown,A,D,A,correct_to_wrong,diagnosis,RAG introduced error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,A,A,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,E,E,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,C,A,D,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,D,B,B,unchanged_wrong,diagnosis,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,E,A,correct_to_wrong,other,RAG introduced error
+unknown,A,C,E,unchanged_wrong,other,Both incorrect
+unknown,A,E,B,unchanged_wrong,other,Both incorrect
+unknown,B,A,B,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,A,D,D,unchanged_wrong,negation,Both incorrect
+unknown,E,A,A,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,A,A,unchanged_wrong,negation,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,A,A,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,A,C,correct_to_wrong,other,RAG introduced error
+unknown,A,C,C,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,D,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,D,A,A,unchanged_wrong,treatment,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,D,D,unchanged_wrong,negation,Both incorrect
+unknown,D,C,E,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,adverse_effect,Both correct
+unknown,A,C,A,correct_to_wrong,mechanism,RAG introduced error
+unknown,E,E,C,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,B,A,A,unchanged_wrong,other,Both incorrect
+unknown,A,D,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,mechanism,Both correct
+unknown,B,E,E,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,C,A,correct_to_wrong,other,RAG introduced error
+unknown,A,B,C,unchanged_wrong,treatment,Both incorrect
+unknown,E,D,D,unchanged_wrong,other,Both incorrect
+unknown,A,A,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,B,C,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,C,C,unchanged_wrong,other,Both incorrect
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,,D,unchanged_wrong,treatment,Both incorrect
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,E,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,B,D,B,correct_to_wrong,other,RAG introduced error
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,D,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,A,C,C,unchanged_wrong,other,Both incorrect
+unknown,C,E,D,unchanged_wrong,other,Both incorrect
+unknown,A,D,D,unchanged_wrong,other,Both incorrect
+unknown,D,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,C,C,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,B,B,unchanged_wrong,diagnosis,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,A,B,unchanged_wrong,other,Both incorrect
+unknown,D,B,B,unchanged_wrong,negation,Both incorrect
+unknown,D,D,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,E,E,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,E,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,mechanism,Both correct
+unknown,E,A,E,correct_to_wrong,negation,RAG introduced error
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,B,A,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,D,D,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,A,B,A,correct_to_wrong,diagnosis,RAG introduced error
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,B,A,B,correct_to_wrong,negation,RAG introduced error
+unknown,B,E,E,unchanged_wrong,other,Both incorrect
+unknown,B,C,A,unchanged_wrong,negation,Both incorrect
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,mechanism,Both correct
+unknown,A,C,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,B,E,B,correct_to_wrong,mechanism,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,B,E,correct_to_wrong,other,RAG introduced error
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,B,C,unchanged_wrong,negation,Both incorrect
+unknown,D,E,B,unchanged_wrong,other,Both incorrect
+unknown,C,A,A,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,D,E,D,correct_to_wrong,other,RAG introduced error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,E,D,correct_to_wrong,treatment,RAG introduced error
+unknown,E,D,D,unchanged_wrong,other,Both incorrect
+unknown,A,B,E,unchanged_wrong,negation,Both incorrect
+unknown,D,D,C,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,B,B,unchanged_wrong,negation,Both incorrect
+unknown,B,C,C,unchanged_wrong,diagnosis,Both incorrect
+unknown,E,E,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,B,A,correct_to_wrong,negation,RAG introduced error
+unknown,A,C,C,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,D,E,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,D,D,unchanged_wrong,other,Both incorrect
+unknown,A,B,C,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,A,E,B,unchanged_wrong,other,Both incorrect
+unknown,B,A,E,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,,D,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,D,C,D,correct_to_wrong,adverse_effect,RAG introduced error
+unknown,D,B,B,unchanged_wrong,negation,Both incorrect
+unknown,B,A,A,unchanged_wrong,other,Both incorrect
+unknown,B,,B,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,D,B,B,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,B,B,A,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,D,D,unchanged_wrong,other,Both incorrect
+unknown,B,A,B,correct_to_wrong,negation,RAG introduced error
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,B,B,unchanged_wrong,other,Both incorrect
+unknown,C,A,E,unchanged_wrong,treatment,Both incorrect
+unknown,E,E,E,unchanged_correct,diagnosis,Both correct
+unknown,B,B,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,B,C,unchanged_wrong,other,Both incorrect
+unknown,B,E,C,unchanged_wrong,other,Both incorrect
+unknown,E,A,E,correct_to_wrong,treatment,RAG introduced error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,mechanism,Both correct
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,D,A,E,unchanged_wrong,other,Both incorrect
+unknown,A,,A,correct_to_wrong,treatment,RAG introduced error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,B,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,C,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,A,B,correct_to_wrong,other,RAG introduced error
+unknown,C,B,D,unchanged_wrong,diagnosis,Both incorrect
+unknown,D,A,D,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,mechanism,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,E,A,B,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,mechanism,Both correct
+unknown,D,C,D,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,B,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,C,C,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,D,B,C,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,E,E,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,E,B,unchanged_wrong,other,Both incorrect
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,D,D,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,C,B,wrong_to_correct,negation,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,A,D,A,correct_to_wrong,treatment,RAG introduced error
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,E,D,E,correct_to_wrong,treatment,RAG introduced error
+unknown,E,C,E,correct_to_wrong,other,RAG introduced error
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,E,E,unchanged_wrong,other,Both incorrect
+unknown,A,B,B,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,A,C,B,unchanged_wrong,other,Both incorrect
+unknown,E,C,E,correct_to_wrong,negation,RAG introduced error
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,E,C,D,unchanged_wrong,other,Both incorrect
+unknown,E,A,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,E,E,unchanged_wrong,negation,Both incorrect
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,C,B,unchanged_wrong,negation,Both incorrect
+unknown,C,E,E,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,C,C,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,C,A,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,E,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,A,A,unchanged_wrong,negation,Both incorrect
+unknown,A,E,C,unchanged_wrong,other,Both incorrect
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,E,E,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,treatment,Both correct
+unknown,E,A,D,unchanged_wrong,negation,Both incorrect
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,B,D,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,E,B,C,unchanged_wrong,other,Both incorrect
+unknown,C,A,E,unchanged_wrong,other,Both incorrect
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,B,A,B,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,C,E,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,D,D,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,E,C,C,unchanged_wrong,other,Both incorrect
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,C,C,A,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,C,B,correct_to_wrong,other,RAG introduced error
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,C,B,C,correct_to_wrong,other,RAG introduced error
+unknown,B,B,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,E,A,E,correct_to_wrong,other,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,B,C,correct_to_wrong,negation,RAG introduced error
+unknown,E,A,B,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,negation,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,D,C,correct_to_wrong,treatment,RAG introduced error
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,B,A,unchanged_wrong,treatment,Both incorrect
+unknown,E,A,C,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,D,D,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,B,C,C,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,D,D,unchanged_correct,other,Both correct
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,C,E,C,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,B,B,C,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,diagnosis,Both correct
+unknown,A,B,E,unchanged_wrong,other,Both incorrect
+unknown,C,C,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,C,C,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,E,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,treatment,Both correct
+unknown,A,E,E,unchanged_wrong,diagnosis,Both incorrect
+unknown,E,E,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,C,A,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,A,A,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,D,C,C,unchanged_wrong,negation,Both incorrect
+unknown,A,B,A,correct_to_wrong,other,RAG introduced error
+unknown,E,C,C,unchanged_wrong,negation,Both incorrect
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,E,E,E,unchanged_correct,other,Both correct
+unknown,C,E,E,unchanged_wrong,treatment,Both incorrect
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct
+unknown,D,C,E,unchanged_wrong,negation,Both incorrect
+unknown,E,E,C,wrong_to_correct,other,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,treatment,Both correct
+unknown,B,E,C,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,A,A,C,wrong_to_correct,treatment,RAG corrected baseline error
+unknown,C,C,B,wrong_to_correct,diagnosis,RAG corrected baseline error
+unknown,A,A,A,unchanged_correct,negation,Both correct
+unknown,D,D,A,wrong_to_correct,other,RAG corrected baseline error
+unknown,D,,D,correct_to_wrong,negation,RAG introduced error
+unknown,A,A,D,wrong_to_correct,other,RAG corrected baseline error
+unknown,E,E,E,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,treatment,Both correct
+unknown,E,C,E,correct_to_wrong,negation,RAG introduced error
+unknown,A,D,D,unchanged_wrong,negation,Both incorrect
+unknown,B,A,D,unchanged_wrong,other,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,B,D,B,correct_to_wrong,negation,RAG introduced error
+unknown,E,D,E,correct_to_wrong,negation,RAG introduced error
+unknown,D,C,D,correct_to_wrong,other,RAG introduced error
+unknown,B,E,D,unchanged_wrong,treatment,Both incorrect
+unknown,A,A,A,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,B,B,B,unchanged_correct,diagnosis,Both correct
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,B,A,E,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,negation,Both correct
+unknown,E,B,D,unchanged_wrong,negation,Both incorrect
+unknown,A,A,A,unchanged_correct,diagnosis,Both correct
+unknown,C,C,C,unchanged_correct,other,Both correct
+unknown,C,C,B,wrong_to_correct,mechanism,RAG corrected baseline error
+unknown,D,D,D,unchanged_correct,treatment,Both correct
+unknown,C,D,A,unchanged_wrong,mechanism,Both incorrect
+unknown,A,A,D,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,B,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,B,A,C,unchanged_wrong,negation,Both incorrect
+unknown,C,D,D,unchanged_wrong,other,Both incorrect
+unknown,B,B,B,unchanged_correct,other,Both correct
+unknown,E,B,E,correct_to_wrong,other,RAG introduced error
+unknown,E,E,C,wrong_to_correct,negation,RAG corrected baseline error
+unknown,C,B,B,unchanged_wrong,negation,Both incorrect
+unknown,C,C,C,unchanged_correct,negation,Both correct
+unknown,C,C,C,unchanged_correct,diagnosis,Both correct

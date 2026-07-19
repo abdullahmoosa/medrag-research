@@ -1,0 +1,10 @@
+{
+  "figure_id": "figure3_dense_vs_hybrid_paired_deltas",
+  "input_table": "paper/artifacts/tables/table4_factor_deltas.csv",
+  "x": "pair_id",
+  "y": "delta_hybrid_minus_dense",
+  "group_by": "comparison_key",
+  "filter": "comparison=='hybrid_vs_dense'",
+  "caption_short": "Dense vs hybrid paired deltas.",
+  "caption_long": "Per-slice paired difference (hybrid minus dense). Negative values indicate dense outperforms hybrid."
+}

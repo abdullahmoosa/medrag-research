@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <defs>
+    <marker id="arrowGray" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,4 L0,8 z" fill="#bdbdbd"/>
+    </marker>
+    <style>
+      .title { font: 700 60px Arial, Helvetica, sans-serif; fill: #111; }
+      .label { font: 700 48px Arial, Helvetica, sans-serif; fill: #111; }
+      .item  { font: 500 50px Arial, Helvetica, sans-serif; fill: #111; }
+      .cap   { font: 500 62px Georgia, 'Times New Roman', serif; fill: #111; }
+      .box { fill: none; stroke: #1e1e1e; stroke-width: 4; }
+      .arrow { stroke: #bdbdbd; stroke-width: 14; fill: none; marker-end: url(#arrowGray); }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="980" fill="#e8e8e8"/>
+
+  <!-- Corpora -->
+  <rect class="box" x="1080" y="110" rx="52" ry="52" width="340" height="600"/>
+  <text class="title" x="1250" y="125" text-anchor="middle">Corpora</text>
+
+  <rect x="1135" y="160" width="230" height="72" fill="#e6bcbc"/>
+  <text class="item" x="1250" y="213" text-anchor="middle">PubMed</text>
+
+  <rect x="1135" y="265" width="230" height="72" fill="#f0d9d9"/>
+  <text class="item" x="1250" y="318" text-anchor="middle">Textbooks</text>
+
+  <rect x="1135" y="370" width="230" height="72" fill="#edd9c0"/>
+  <text class="item" x="1250" y="423" text-anchor="middle">Wikipedia</text>
+
+  <rect x="1135" y="475" width="230" height="72" fill="#e6c1c1"/>
+  <text class="item" x="1250" y="528" text-anchor="middle">PubMedQA</text>
+
+  <rect x="1135" y="580" width="230" height="72" fill="#eac7c7"/>
+  <text class="item" x="1250" y="633" text-anchor="middle">MedCorp</text>
+
+  <!-- Retrieval / Index box -->
+  <rect class="box" x="90" y="110" rx="52" ry="52" width="360" height="500"/>
+  <text class="title" x="270" y="125" text-anchor="middle">Retrieval Stack</text>
+
+  <rect x="145" y="160" width="250" height="72" fill="#edd9c0"/>
+  <text class="item" x="270" y="213" text-anchor="middle">Dense</text>
+
+  <rect x="145" y="265" width="250" height="72" fill="#f0dfca"/>
+  <text class="item" x="270" y="318" text-anchor="middle">Hybrid</text>
+
+  <rect x="145" y="370" width="250" height="72" fill="#e6bcbc"/>
+  <text class="item" x="270" y="423" text-anchor="middle">Reranker</text>
+
+  <rect x="145" y="475" width="250" height="72" fill="#f3dddd"/>
+  <text class="item" x="270" y="528" text-anchor="middle">Reformulation</text>
+
+  <!-- LLMs -->
+  <rect class="box" x="570" y="240" rx="52" ry="52" width="380" height="570"/>
+  <text class="title" x="760" y="255" text-anchor="middle">LLM Inference</text>
+
+  <rect x="625" y="290" width="270" height="72" fill="#edd9c0"/>
+  <text class="item" x="760" y="343" text-anchor="middle">Llama3-Med42</text>
+
+  <rect x="625" y="395" width="270" height="72" fill="#f0dfca"/>
+  <text class="item" x="760" y="448" text-anchor="middle">Gemma3</text>
+
+  <rect x="625" y="500" width="270" height="72" fill="#e6c1c1"/>
+  <text class="item" x="760" y="553" text-anchor="middle">Zero-shot</text>
+
+  <rect x="625" y="605" width="270" height="72" fill="#f2dada"/>
+  <text class="item" x="760" y="658" text-anchor="middle">CoT</text>
+
+  <rect x="625" y="710" width="270" height="72" fill="#ecd7bd"/>
+  <text class="item" x="760" y="763" text-anchor="middle">Answer</text>
+
+  <!-- Question / Answer nodes -->
+  <rect x="90" y="680" rx="18" ry="18" width="230" height="110" fill="#dcd5e3" stroke="#9b8db0" stroke-width="4"/>
+  <text class="item" x="205" y="752" text-anchor="middle">Question</text>
+
+  <rect x="1210" y="680" rx="18" ry="18" width="200" height="110" fill="#ebebeb" stroke="#8f8f8f" stroke-width="4"/>
+  <text class="item" x="1310" y="752" text-anchor="middle" fill="#444">Answer</text>
+
+  <!-- Flow labels -->
+  <text class="label" x="750" y="120" text-anchor="middle">Indexing</text>
+  <text class="label" x="350" y="700" text-anchor="middle">Retrieval</text>
+  <text class="label" x="1120" y="700" text-anchor="middle">Generation</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="1070" y1="170" x2="490" y2="170"/>
+  <line class="arrow" x1="285" y1="680" x2="560" y2="680"/>
+  <line class="arrow" x1="960" y1="680" x2="1190" y2="680"/>
+  <line class="arrow" x1="150" y1="630" x2="250" y2="500"/>
+  <line class="arrow" x1="430" y1="580" x2="555" y2="700"/>
+
+  <!-- Caption -->
+  <text class="cap" x="750" y="925" text-anchor="middle">Figure: Workflow overview of the MedRAG research pipeline.</text>
+</svg>

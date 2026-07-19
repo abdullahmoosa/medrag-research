@@ -1,0 +1,130 @@
+{
+  "reranker": {
+    "strongest_negative": {
+      "family": "RAG",
+      "index_name": "bge_large_en_v1.5",
+      "retrieval_mode": "dense",
+      "coarse_mode": "coarse_k20",
+      "reformulation": "no_reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 2,
+      "factor": "reranker",
+      "level_a": "reranker_off",
+      "level_b": "reranker_on",
+      "delta": "-0.001571091909",
+      "comparison_key": "RAG|bge_large_en_v1.5|dense|coarse_k20|no_reformulation|zero_shot|llama3_med42_8b"
+    },
+    "strongest_positive": {
+      "family": "RAG",
+      "index_name": "medembed",
+      "retrieval_mode": "dense",
+      "coarse_mode": "coarse_off",
+      "reformulation": "no_reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "gemma3",
+      "pair_id": 13,
+      "factor": "reranker",
+      "level_a": "reranker_off",
+      "level_b": "reranker_on",
+      "delta": "0.029850746269",
+      "comparison_key": "RAG|medembed|dense|coarse_off|no_reformulation|zero_shot|gemma3"
+    }
+  },
+  "reformulation": {
+    "strongest_negative": {
+      "family": "RAG",
+      "index_name": "bge_large_en_v1.5",
+      "retrieval_mode": "dense",
+      "coarse_mode": "coarse_k20",
+      "reranker": "reranker_on",
+      "prompt_mode": "zero_shot",
+      "llm_model": "gemma3",
+      "pair_id": 19,
+      "factor": "reformulation",
+      "level_a": "no_reformulation",
+      "level_b": "reformulation",
+      "delta": "-0.002356637863",
+      "comparison_key": "RAG|bge_large_en_v1.5|dense|coarse_k20|reranker_on|zero_shot|gemma3"
+    },
+    "strongest_positive": {
+      "family": "RAG",
+      "index_name": "medembed",
+      "retrieval_mode": "dense",
+      "coarse_mode": "coarse_k20",
+      "reranker": "reranker_on",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 28,
+      "factor": "reformulation",
+      "level_a": "no_reformulation",
+      "level_b": "reformulation",
+      "delta": "0.019638648861",
+      "comparison_key": "RAG|medembed|dense|coarse_k20|reranker_on|zero_shot|llama3_med42_8b"
+    }
+  },
+  "retrieval_mode": {
+    "strongest_negative": {
+      "family": "RAG",
+      "index_name": "bge_large_en_v1.5",
+      "coarse_mode": "coarse_off",
+      "reranker": "reranker_off",
+      "reformulation": "no_reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 34,
+      "factor": "retrieval_mode",
+      "level_a": "dense",
+      "level_b": "hybrid",
+      "delta": "-0.037706205813",
+      "comparison_key": "RAG|bge_large_en_v1.5|coarse_off|reranker_off|no_reformulation|zero_shot|llama3_med42_8b"
+    },
+    "strongest_positive": {
+      "family": "RAG",
+      "index_name": "bge_large_en_v1.5",
+      "coarse_mode": "coarse_off",
+      "reranker": "reranker_on",
+      "reformulation": "reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 35,
+      "factor": "retrieval_mode",
+      "level_a": "dense",
+      "level_b": "hybrid",
+      "delta": "-0.007855459544",
+      "comparison_key": "RAG|bge_large_en_v1.5|coarse_off|reranker_on|reformulation|zero_shot|llama3_med42_8b"
+    }
+  },
+  "coarse_mode": {
+    "strongest_negative": {
+      "family": "RAG",
+      "index_name": "medembed",
+      "retrieval_mode": "dense",
+      "reranker": "reranker_off",
+      "reformulation": "reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 49,
+      "factor": "coarse_mode",
+      "level_a": "coarse_off",
+      "level_b": "coarse_k20",
+      "delta": "-0.004713275727",
+      "comparison_key": "RAG|medembed|dense|reranker_off|reformulation|zero_shot|llama3_med42_8b"
+    },
+    "strongest_positive": {
+      "family": "RAG",
+      "index_name": "bge_large_en_v1.5",
+      "retrieval_mode": "dense",
+      "reranker": "reranker_off",
+      "reformulation": "reformulation",
+      "prompt_mode": "zero_shot",
+      "llm_model": "llama3_med42_8b",
+      "pair_id": 40,
+      "factor": "coarse_mode",
+      "level_a": "coarse_off",
+      "level_b": "coarse_k20",
+      "delta": "0.004713275727",
+      "comparison_key": "RAG|bge_large_en_v1.5|dense|reranker_off|reformulation|zero_shot|llama3_med42_8b"
+    }
+  }
+}

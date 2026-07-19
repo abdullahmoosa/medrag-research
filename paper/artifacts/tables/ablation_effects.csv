@@ -1,0 +1,5 @@
+factor,level_a,level_b,n_pairs,mean_delta,median_delta,positive_pairs,negative_pairs
+reranker,reranker_off,reranker_on,16,0.013501571092,0.012961508248,14,2
+reformulation,no_reformulation,reformulation,16,0.009082875098,0.009819324430,14,2
+retrieval_mode,dense,hybrid,4,-0.018460329929,-0.014139827180,0,4
+coarse_mode,coarse_off,coarse_k20,17,0.000323460099,0.000000000000,6,5

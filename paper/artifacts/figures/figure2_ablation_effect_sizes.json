@@ -1,0 +1,10 @@
+{
+  "figure_id": "figure2_ablation_effect_sizes",
+  "input_table": "paper/artifacts/tables/ablation_effects.csv",
+  "x": "factor",
+  "y": "mean_delta",
+  "group_by": "factor",
+  "filter": "n_pairs>0",
+  "caption_short": "Ablation effect sizes.",
+  "caption_long": "Mean paired accuracy deltas for key factors with confidence intervals where applicable."
+}

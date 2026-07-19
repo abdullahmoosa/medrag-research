@@ -1,0 +1,10 @@
+{
+  "figure_id": "figure1_accuracy_by_family",
+  "input_table": "paper/artifacts/tables/table1_run_matrix_summary.csv",
+  "x": "family_group",
+  "y": "accuracy",
+  "group_by": "family_group",
+  "filter": "is_complete==True",
+  "caption_short": "Accuracy by evaluation family.",
+  "caption_long": "Distribution of completed-run accuracy across NO_RAG, RAG-BGE, and RAG-MedEmbed families."
+}

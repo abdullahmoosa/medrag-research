@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1300" viewBox="0 0 2200 1300">
+  <defs>
+    <marker id="arrowGray" markerWidth="14" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,5 L0,10 z" fill="#bdbdbd"/>
+    </marker>
+    <style>
+      .title { font: 700 56px Arial, Helvetica, sans-serif; fill: #111; }
+      .subtitle { font: 700 34px Arial, Helvetica, sans-serif; fill: #111; }
+      .label { font: 700 30px Arial, Helvetica, sans-serif; fill: #111; }
+      .txt { font: 500 28px Arial, Helvetica, sans-serif; fill: #111; }
+      .tiny { font: 500 24px Arial, Helvetica, sans-serif; fill: #333; }
+      .cap { font: 500 42px Georgia, "Times New Roman", serif; fill: #111; }
+      .grp { fill: none; stroke: #1f1f1f; stroke-width: 4; }
+      .stepA { fill: #edd9c0; }
+      .stepB { fill: #f0dfca; }
+      .stepC { fill: #e8c2c2; }
+      .stepD { fill: #f2dddd; }
+      .stepE { fill: #dcd5e3; }
+      .node { stroke: #666; stroke-width: 1.2; }
+      .arrow { stroke: #bdbdbd; stroke-width: 12; fill: none; marker-end: url(#arrowGray); }
+      .loop { stroke: #9ea0a4; stroke-width: 8; fill: none; marker-end: url(#arrowGray); }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="2200" height="1300" fill="#e8e8e8"/>
+  <text class="title" x="1100" y="80" text-anchor="middle">Detailed Query Reformulation Workflow (Implemented)</text>
+
+  <!-- Lane 1: Input + prompt -->
+  <rect class="grp" x="60" y="130" rx="38" ry="38" width="620" height="980"/>
+  <text class="subtitle" x="370" y="155" text-anchor="middle">Query Sources + Prompt Build</text>
+
+  <rect class="node stepE" x="120" y="210" width="500" height="95" rx="12"/>
+  <text class="txt" x="370" y="272" text-anchor="middle">Batch examples -> extract question text</text>
+
+  <rect class="node stepA" x="120" y="345" width="500" height="180" rx="12"/>
+  <text class="label" x="370" y="398" text-anchor="middle">Base Query Assembly</text>
+  <text class="tiny" x="370" y="438" text-anchor="middle">q_texts += question; q_meta.kind = 'base'</text>
+  <text class="tiny" x="370" y="472" text-anchor="middle">optional additional kinds: opt, exp, hyde</text>
+  <text class="tiny" x="370" y="506" text-anchor="middle">(reform is added later)</text>
+
+  <rect class="node stepB" x="120" y="565" width="500" height="190" rx="12"/>
+  <text class="label" x="370" y="620" text-anchor="middle">Reform Prompt Construction</text>
+  <text class="tiny" x="370" y="660" text-anchor="middle">reform_prompt.format(question=q)</text>
+  <text class="tiny" x="370" y="694" text-anchor="middle">default prompt enforces ONE textbook-style query</text>
+  <text class="tiny" x="370" y="728" text-anchor="middle">target: 8-12 words; output query only</text>
+
+  <rect class="node stepC" x="120" y="795" width="500" height="155" rx="12"/>
+  <text class="label" x="370" y="846" text-anchor="middle">Async LLM Call (Batch)</text>
+  <text class="tiny" x="370" y="884" text-anchor="middle">AsyncLLMClient.generate_batch(prompts)</text>
+  <text class="tiny" x="370" y="918" text-anchor="middle">max_tokens, temperature from QueryConfig</text>
+
+  <!-- Lane 2: validation + fallback -->
+  <rect class="grp" x="740" y="130" rx="38" ry="38" width="760" height="980"/>
+  <text class="subtitle" x="1120" y="155" text-anchor="middle">Validation and Fallback Gate</text>
+
+  <rect class="node stepA" x="810" y="210" width="620" height="95" rx="12"/>
+  <text class="txt" x="1120" y="272" text-anchor="middle">Normalize output: strip + replace newlines with spaces</text>
+
+  <polygon class="node stepD" points="1120,345 1270,430 1120,515 970,430"/>
+  <text class="tiny" x="1120" y="422" text-anchor="middle">empty or LLM exception?</text>
+  <text class="tiny" x="1120" y="454" text-anchor="middle">(batch failure / per-item empty)</text>
+
+  <rect class="node stepC" x="810" y="555" width="620" height="125" rx="12"/>
+  <text class="label" x="1120" y="604" text-anchor="middle">Heuristic Fallback Query</text>
+  <text class="tiny" x="1120" y="642" text-anchor="middle">extract alpha words len>4, lowercase, first 10</text>
+
+  <polygon class="node stepD" points="1120,715 1290,810 1120,905 950,810"/>
+  <text class="tiny" x="1120" y="800" text-anchor="middle">validate_reformulated_query?</text>
+  <text class="tiny" x="1120" y="832" text-anchor="middle">(5-14 tokens, no BAD_TOKENS,</text>
+  <text class="tiny" x="1120" y="862" text-anchor="middle">>=1 medical-like token >4 chars)</text>
+
+  <rect class="node stepB" x="810" y="940" width="620" height="130" rx="12"/>
+  <text class="tiny" x="1120" y="992" text-anchor="middle">if invalid -> fallback</text>
+  <text class="tiny" x="1120" y="1028" text-anchor="middle">reformulated_queries[ex_idx] = final query</text>
+
+  <!-- Lane 3: retrieval integration -->
+  <rect class="grp" x="1560" y="130" rx="38" ry="38" width="580" height="980"/>
+  <text class="subtitle" x="1850" y="155" text-anchor="middle">Retrieval Integration</text>
+
+  <rect class="node stepA" x="1630" y="230" width="440" height="130" rx="12"/>
+  <text class="label" x="1850" y="280" text-anchor="middle">Append Reform Query</text>
+  <text class="tiny" x="1850" y="318" text-anchor="middle">q_texts += final_query</text>
+  <text class="tiny" x="1850" y="352" text-anchor="middle">q_meta += {kind:'reform', ex_idx}</text>
+
+  <rect class="node stepB" x="1630" y="400" width="440" height="150" rx="12"/>
+  <text class="tiny" x="1850" y="450" text-anchor="middle">Embed all query variants together</text>
+  <text class="tiny" x="1850" y="484" text-anchor="middle">Dense/BM25 retrieval executed over combined</text>
+  <text class="tiny" x="1850" y="518" text-anchor="middle">query list (base/opt/exp/hyde/reform)</text>
+
+  <rect class="node stepC" x="1630" y="590" width="440" height="180" rx="12"/>
+  <text class="tiny" x="1850" y="642" text-anchor="middle">Per-example grouping by ex_idx</text>
+  <text class="tiny" x="1850" y="676" text-anchor="middle">Fusion: RRF + lexical overlap (+ optional weights)</text>
+  <text class="tiny" x="1850" y="710" text-anchor="middle">Threshold + dedupe + max_passages</text>
+  <text class="tiny" x="1850" y="744" text-anchor="middle">Evidence packed into final prompt</text>
+
+  <rect class="node stepE" x="1630" y="810" width="440" height="190" rx="12"/>
+  <text class="label" x="1850" y="866" text-anchor="middle">Artifacts / Traceability</text>
+  <text class="tiny" x="1850" y="904" text-anchor="middle">store reformulated_query in predictions metadata</text>
+  <text class="tiny" x="1850" y="938" text-anchor="middle">compare reform on/off in ablations</text>
+  <text class="tiny" x="1850" y="972" text-anchor="middle">inspect query quality and retrieval deltas</text>
+
+  <!-- Arrows lane 1 -->
+  <line class="arrow" x1="370" y1="305" x2="370" y2="337"/>
+  <line class="arrow" x1="370" y1="525" x2="370" y2="557"/>
+  <line class="arrow" x1="370" y1="755" x2="370" y2="787"/>
+  <line class="arrow" x1="630" y1="872" x2="790" y2="872"/>
+
+  <!-- Arrows lane 2 -->
+  <line class="arrow" x1="1120" y1="305" x2="1120" y2="338"/>
+  <line class="arrow" x1="1120" y1="515" x2="1120" y2="548"/>
+  <line class="arrow" x1="1120" y1="680" x2="1120" y2="708"/>
+  <line class="arrow" x1="1120" y1="905" x2="1120" y2="932"/>
+
+  <!-- Decision side routes -->
+  <text class="tiny" x="1278" y="416">NO</text>
+  <text class="tiny" x="930" y="416">YES</text>
+  <line class="arrow" x1="972" y1="430" x2="835" y2="430"/>
+  <line class="arrow" x1="835" y1="430" x2="835" y2="552"/>
+
+  <text class="tiny" x="1298" y="796">YES</text>
+  <text class="tiny" x="900" y="796">NO -> fallback</text>
+  <line class="arrow" x1="952" y1="810" x2="840" y2="810"/>
+  <line class="arrow" x1="840" y1="810" x2="840" y2="612"/>
+
+  <!-- to lane 3 -->
+  <line class="arrow" x1="1438" y1="1005" x2="1618" y2="1005"/>
+  <line class="arrow" x1="1850" y1="360" x2="1850" y2="392"/>
+  <line class="arrow" x1="1850" y1="550" x2="1850" y2="582"/>
+  <line class="arrow" x1="1850" y1="770" x2="1850" y2="802"/>
+
+  <!-- loop text -->
+  <line class="loop" x1="1490" y1="1005" x2="1540" y2="1005"/>
+  <line class="loop" x1="1540" y1="1005" x2="1540" y2="260"/>
+  <line class="loop" x1="1540" y1="260" x2="1490" y2="260"/>
+  <text class="tiny" x="1552" y="630" transform="rotate(90 1552,630)">next example in batch</text>
+
+  <!-- config callout -->
+  <rect class="node" x="120" y="1130" width="2020" height="120" rx="14" fill="#f4f4f4"/>
+  <text class="tiny" x="150" y="1170">Key config fields mapped to implementation:</text>
+  <text class="tiny" x="150" y="1204">QueryConfig.use_reformulation, reformulation_model, reformulation_temperature, reformulation_max_tokens, reformulation_prompt_template;</text>
+  <text class="tiny" x="150" y="1236">retrieve_batch_fast stores reformulated_queries and appends each validated/fallback query as q_meta kind='reform'.</text>
+
+  <text class="cap" x="1100" y="1282" text-anchor="middle">Figure: Implementation-level query reformulation process used in this project.</text>
+</svg>

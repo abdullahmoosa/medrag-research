@@ -1,0 +1,5 @@
+comparison,pair_id,comparison_key,delta_hybrid_minus_dense
+hybrid_vs_dense,1,RAG|bge_large_en_v1.5|coarse_k20|reranker_on|reformulation|zero_shot|llama3_med42_8b,-0.008641005499
+hybrid_vs_dense,2,RAG|bge_large_en_v1.5|coarse_off|reranker_off|no_reformulation|zero_shot|llama3_med42_8b,-0.037706205813
+hybrid_vs_dense,3,RAG|bge_large_en_v1.5|coarse_off|reranker_on|reformulation|zero_shot|llama3_med42_8b,-0.007855459544
+hybrid_vs_dense,4,RAG|medembed|coarse_k20|reranker_on|reformulation|zero_shot|llama3_med42_8b,-0.019638648861

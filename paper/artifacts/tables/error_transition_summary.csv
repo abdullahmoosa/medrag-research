@@ -1,0 +1,9 @@
+comparison,transition,count
+zero_shot,correct_to_wrong,162
+zero_shot,unchanged_correct,550
+zero_shot,unchanged_wrong,341
+zero_shot,wrong_to_correct,220
+cot,correct_to_wrong,144
+cot,unchanged_correct,616
+cot,unchanged_wrong,361
+cot,wrong_to_correct,152

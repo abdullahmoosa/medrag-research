@@ -1,0 +1,15 @@
+{
+  "complete_total_required": 1273,
+  "n_runs_all": 41,
+  "n_runs_complete": 41,
+  "best_overall_run_id": "RAG|medembed|dense|coarse_k20|reranker_on|reformulation|llama3_med42_8b|zero_shot|v2",
+  "best_overall_accuracy": 0.6048703849175177,
+  "best_zero_shot_rag_run_id": "RAG|medembed|dense|coarse_k20|reranker_on|reformulation|llama3_med42_8b|zero_shot|v2",
+  "best_zero_shot_rag_accuracy": 0.6048703849175177,
+  "best_zero_shot_no_rag_run_id": "NO_RAG|zero_shot|gemma3|base",
+  "best_zero_shot_no_rag_accuracy": 0.5593087195600943,
+  "best_cot_rag_run_id": "RAG|bge_large_en_v1.5|dense|coarse_k20|reranker_on|reformulation|llama3_med42_8b|cot|base",
+  "best_cot_rag_accuracy": 0.603299293008641,
+  "best_cot_no_rag_run_id": "NO_RAG|cot|llama3_med42_8b|v2",
+  "best_cot_no_rag_accuracy": 0.5970149253731343
+}

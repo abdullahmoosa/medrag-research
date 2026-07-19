@@ -14,3 +14,6 @@ tb_logs_medmcqa_v1/
 src/scripts/venv/
 
 processed_corpus*
+tmp/
+.codex_tmp_libs/
+.DS*

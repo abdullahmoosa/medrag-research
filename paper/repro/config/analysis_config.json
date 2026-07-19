@@ -1,0 +1,18 @@
+{
+  "dataset": "MedQA USMLE test set",
+  "complete_total_required": 1273,
+  "index_mapping": {
+    "index_1": "BAAI/bge-large-en-v1.5",
+    "bge_large_en_v1.5": "BAAI/bge-large-en-v1.5",
+    "medembed": "abhinand/MedEmbed-large-v0.1"
+  },
+  "hardware": {
+    "gpu": "NVIDIA RTX 3090",
+    "execution_mode": "local"
+  },
+  "analysis": {
+    "bootstrap_samples": 3000,
+    "random_seed": 42,
+    "paired_test": "McNemar exact"
+  }
+}
