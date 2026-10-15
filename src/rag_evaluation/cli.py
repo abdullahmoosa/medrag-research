@@ -527,8 +527,11 @@ def generate_output_dir(config: EvaluationConfig, index_name: str = None) -> Pat
     model_name = config.llm.model_name
     # Remove user/org prefix
     model_name = model_name.split("/")[-1] if "/" in model_name else model_name
-    # Remove tag/version suffix
-    model_name = model_name.split(":")[0] if ":" in model_name else model_name
+    # Keep tag/version suffix unless it is generic ("llama3:8b" -> "llama3_8b",
+    # "med42:latest" -> "med42")
+    if ":" in model_name:
+        repo, tag = model_name.split(":", 1)
+        model_name = f"{repo}_{tag}" if tag and tag.lower() != "latest" else repo
     # Replace hyphens and dots with underscores
     model_name = model_name.replace("-", "_").replace(".", "_")
 

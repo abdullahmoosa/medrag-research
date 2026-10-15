@@ -1,0 +1,79 @@
+{
+  "total": 1273,
+  "correct": 658,
+  "accuracy": 0.5168892380204242,
+  "with_context_count": 0,
+  "with_context_accuracy": 0.0,
+  "without_context_count": 1273,
+  "without_context_accuracy": 0.5168892380204242,
+  "by_subject": {
+    "UNKNOWN": {
+      "count": 1273,
+      "accuracy": 0.5168892380204242
+    }
+  },
+  "by_choice_type": {
+    "single": {
+      "count": 1273,
+      "accuracy": 0.5168892380204242
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "matrix": [
+      [
+        209,
+        24,
+        14,
+        15,
+        11
+      ],
+      [
+        78,
+        161,
+        18,
+        8,
+        12
+      ],
+      [
+        74,
+        30,
+        121,
+        14,
+        13
+      ],
+      [
+        88,
+        31,
+        28,
+        99,
+        22
+      ],
+      [
+        79,
+        22,
+        21,
+        12,
+        68
+      ]
+    ]
+  },
+  "coverage": {
+    "mean": 0.0,
+    "min": 0,
+    "max": 0,
+    "median": 0,
+    "p25": 0,
+    "p75": 0,
+    "with_context": 0,
+    "without_context": 1273
+  },
+  "elapsed_seconds": 1983.5366456508636,
+  "examples_per_second": 0.6417829500610446
+}
