@@ -1,0 +1,29 @@
+cff-version: "1.2.0"
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+title: "MedRAG Research"
+version: "1.0.0"
+license: MIT
+authors:
+  - family-names: "Sultana"
+    given-names: "Nusrat"
+  - family-names: "Moosa"
+    given-names: "Abdullah Muhammad"
+  - family-names: "Rahman"
+    given-names: "Kazi Afzalur"
+  - family-names: "Banik"
+    given-names: "Sajal Chandra"
+abstract: >-
+  Research software for medical question answering with retrieval-augmented
+  generation. Includes medical-text preprocessing and rechunking, FAISS and
+  BM25 index construction, configurable retrieval and reranking, query
+  reformulation, evaluation of language-model predictions, and a medical
+  RAG chat application.
+repository-code: "https://github.com/abdullahmoosa/medrag-research"
+url: "https://github.com/abdullahmoosa/medrag-research"
+keywords:
+  - "retrieval-augmented generation"
+  - "medical question answering"
+  - "information retrieval"
+  - "evaluation"
+  - "text chunking"

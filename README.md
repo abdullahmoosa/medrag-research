@@ -49,3 +49,11 @@ If you use MedRAG Research in your work, please cite our paper:
   journal={arXiv preprint arXiv:2604.07274},
   year={2026}
 }
+```
+
+## License
+
+The original software in this repository is licensed under the [MIT License](LICENSE).
+Third-party code, dependencies, datasets, textbook content, and model weights
+remain subject to their respective licenses and terms; the MIT License does
+not grant additional rights to those materials.
