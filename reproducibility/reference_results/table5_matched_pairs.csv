@@ -1,0 +1,83 @@
+contrast,run_a,run_b,difference_pp
+Reranker off to on,R030,R038,2.513747054202671
+Reranker off to on,R032,R039,-1.4139827179890023
+Reranker off to on,R034,R040,-0.15710919088766695
+Reranker off to on,R035,R041,2.199528672427337
+Reranker off to on,R036,R043,-1.8067556952081696
+Reranker off to on,R037,R045,0.15710919088766695
+Reranker off to on,R046,R054,2.513747054202671
+Reranker off to on,R048,R055,-1.8067556952081696
+Reranker off to on,R050,R056,-0.15710919088766695
+Reranker off to on,R051,R058,2.199528672427337
+Reranker off to on,R052,R059,-1.8853102906520032
+Reranker off to on,R053,R060,0.3927729772191673
+Reranker off to on,R067,R074,2.9850746268656714
+Reranker off to on,R068,R075,1.0997643362136684
+Reranker off to on,R069,R077,0.6284367635506678
+Reranker off to on,R070,R079,1.4139827179890023
+Reranker off to on,R071,R081,-0.2356637863315004
+Reranker off to on,R072,R085,0.5498821681068342
+Reranker off to on,R091,R098,2.9850746268656714
+Reranker off to on,R092,R099,1.021209740769835
+Reranker off to on,R093,R100,0.3927729772191673
+Reranker off to on,R094,R102,1.4139827179890023
+Reranker off to on,R095,R103,-0.7855459544383346
+Reranker off to on,R096,R105,0.07855459544383347
+Query reformulation off to on,R030,R035,0.07855459544383347
+Query reformulation off to on,R032,R036,1.4925373134328357
+Query reformulation off to on,R034,R037,0.9426551453260016
+Query reformulation off to on,R038,R041,-0.2356637863315004
+Query reformulation off to on,R039,R043,1.0997643362136684
+Query reformulation off to on,R040,R045,1.2568735271013356
+Query reformulation off to on,R046,R051,0.15710919088766695
+Query reformulation off to on,R048,R052,0.9426551453260016
+Query reformulation off to on,R050,R053,0.4713275726630008
+Query reformulation off to on,R054,R058,-0.15710919088766695
+Query reformulation off to on,R055,R059,0.864100549882168
+Query reformulation off to on,R056,R060,1.021209740769835
+Query reformulation off to on,R067,R070,1.5710919088766693
+Query reformulation off to on,R068,R071,1.8067556952081696
+Query reformulation off to on,R069,R072,1.4925373134328357
+Query reformulation off to on,R074,R079,0.0
+Query reformulation off to on,R075,R081,0.4713275726630008
+Query reformulation off to on,R077,R085,1.4139827179890023
+Query reformulation off to on,R091,R094,1.6496465043205029
+Query reformulation off to on,R092,R095,1.8853102906520032
+Query reformulation off to on,R093,R096,1.8067556952081696
+Query reformulation off to on,R098,R102,0.07855459544383347
+Query reformulation off to on,R099,R103,0.07855459544383347
+Query reformulation off to on,R100,R105,1.4925373134328357
+Dense to hybrid,R043,R061,-1.6496465043205029
+Dense to hybrid,R045,R062,-0.864100549882168
+Dense to hybrid,R048,R063,-6.991358994501179
+Dense to hybrid,R050,R064,-3.7706205813040063
+Dense to hybrid,R059,R065,-0.9426551453260016
+Dense to hybrid,R060,R066,-0.7855459544383346
+Dense to hybrid,R081,R106,-1.728201099764336
+Dense to hybrid,R085,R107,-1.4139827179890023
+Recorded stratum off to k20 (coarse filtering inactive),R046,R030,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R048,R032,-0.4713275726630008
+Recorded stratum off to k20 (coarse filtering inactive),R050,R034,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R051,R035,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R052,R036,0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R053,R037,0.4713275726630008
+Recorded stratum off to k20 (coarse filtering inactive),R054,R038,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R055,R039,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R056,R040,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R058,R041,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R059,R043,0.15710919088766695
+Recorded stratum off to k20 (coarse filtering inactive),R060,R045,0.2356637863315004
+Recorded stratum off to k20 (coarse filtering inactive),R065,R061,-0.5498821681068342
+Recorded stratum off to k20 (coarse filtering inactive),R066,R062,0.15710919088766695
+Recorded stratum off to k20 (coarse filtering inactive),R091,R067,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R092,R068,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R093,R069,-0.15710919088766695
+Recorded stratum off to k20 (coarse filtering inactive),R094,R070,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R095,R071,-0.15710919088766695
+Recorded stratum off to k20 (coarse filtering inactive),R096,R072,-0.4713275726630008
+Recorded stratum off to k20 (coarse filtering inactive),R098,R074,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R099,R075,0.0
+Recorded stratum off to k20 (coarse filtering inactive),R100,R077,0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R102,R079,-0.07855459544383347
+Recorded stratum off to k20 (coarse filtering inactive),R103,R081,0.3927729772191673
+Recorded stratum off to k20 (coarse filtering inactive),R105,R085,0.0

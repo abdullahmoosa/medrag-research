@@ -1,0 +1,11 @@
+# Portable selection from the retained environment, with published PyPI names.
+# This is a reproduction environment specification, not a recovered host lockfile.
+numpy==1.26.4
+torch==2.1.2
+transformers==4.35.0
+sentence-transformers==3.0.1
+faiss-cpu==1.7.4
+rank-bm25==0.2.2
+tiktoken==0.11.0
+ollama==0.5.3
+tqdm==4.67.1

@@ -1,0 +1,8 @@
+condition,run_id,model,prompt,embedding,retrieval,reranker,reformulation,correct,n,accuracy_percent,wilson_ci_low_percent,wilson_ci_high_percent,elapsed_seconds
+Zero-shot without RAG,R008,llama3_med42_8b,zero_shot,none,none,none,none,707,1273,55.53809897879026,52.79574238883774,58.24713212200633,94.86154246330261
+Zero-shot dense,R034,llama3_med42_8b,zero_shot,index_1,dense,reranker_off,no_reformulation,752,1273,59.07305577376276,56.34863297497813,61.742884840660025,387.49360632896423
+Zero-shot dense + reformulation,R037,llama3_med42_8b,zero_shot,index_1,dense,reranker_off,reformulation,764,1273,60.015710919088775,57.29847647210209,62.672679558147834,761.4987754821777
+Zero-shot dense + reformulation + reranker,R045,llama3_med42_8b,zero_shot,index_1,dense,reranker_on,reformulation,766,1273,60.172820109976435,57.45688385721507,62.82754520880346,844.5230457782745
+Zero-shot hybrid + reformulation + reranker,R062,llama3_med42_8b,zero_shot,index_1,hybrid,reranker_on,reformulation,755,1273,59.30871956009427,56.58599762273078,61.975429746560316,3079.1611366271973
+CoT without RAG,R003,llama3_med42_8b,cot,none,none,none,none,760,1273,59.70149253731343,56.98174775013687,62.362862208575784,3154.3316349983215
+CoT dense + reformulation + reranker,R044,llama3_med42_8b,cot,index_1,dense,reranker_on,reformulation,768,1273,60.3299293008641,57.61532000048631,62.98238210130087,4391.90949344635

@@ -17,3 +17,11 @@ processed_corpus*
 tmp/
 .codex_tmp_libs/
 .DS*
+
+# Manuscript release preparation
+/paper/revision/
+/reproducibility/generated/
+/dist/
+.venv-*/
+!/reproducibility/data/
+!/reproducibility/data/**

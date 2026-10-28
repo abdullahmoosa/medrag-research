@@ -1,0 +1,2 @@
+# Analysis of the bundled correctness matrix; no LLM or GPU required.
+numpy==1.26.4

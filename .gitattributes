@@ -1,0 +1,11 @@
+# Keep manuscript material, restricted text, and local discussion out of source archives.
+/paper export-ignore
+/evaluation_results export-ignore
+/output export-ignore
+/src/scripts export-ignore
+/CLAUDE.md export-ignore
+/SESSION_2026-10-15_base_vs_med42.md export-ignore
+/claude_code_zai_env.sh export-ignore
+/deepseek_cost_analysis_report.md export-ignore
+/retrieval_flow_diagram.pptx export-ignore
+/src/app/conversations export-ignore

@@ -7,7 +7,7 @@ and version dirs stripped), and reports per-config accuracy with paired
 significance tests computed from predictions.jsonl:
 
   - McNemar's exact test (both models answer the same questions)
-  - Bootstrap 95% CI of the accuracy delta (percentile, 10k resamples)
+  - Bootstrap 95% CI of the accuracy delta (paired percentile, 100k resamples)
 
 Runs join on question text (example_id is "unknown" in this dataset).
 
@@ -19,14 +19,13 @@ Usage:
 
 import argparse
 import json
+import math
 import re
-from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
-from scipy.stats import binomtest
 
-BASE = Path("/home/ser/medrag/evaluation_results/final_output")
+DEFAULT_BASE = Path(__file__).resolve().parents[1] / "evaluation_results" / "final_output"
 VERSION_RE = re.compile(r"^v\d+$")
 
 
@@ -38,8 +37,10 @@ def find_runs(model: str) -> dict[tuple, Path]:
     model dir and any version dirs removed. Later versions win (v3 > v2 > base).
     """
     runs: dict[tuple, Path] = {}
-    versions: dict[tuple, int] = {}
-    for metrics in BASE.rglob("metrics.json"):
+    versions: dict[tuple, tuple[int, bool]] = {}
+    for metrics in sorted(BASE.rglob("metrics.json")):
+        if json.loads(metrics.read_text()).get("total") != 1273 or not metrics.with_name("predictions.jsonl").is_file():
+            continue
         rel = metrics.relative_to(BASE)
         if model not in rel.parts:
             continue
@@ -55,9 +56,10 @@ def find_runs(model: str) -> dict[tuple, Path]:
                 version = max(version, int(p[1:]))
             else:
                 tail.append(p)
-        config = tuple(parts[:i] + tail)
-        if version >= versions.get(config, 0):
-            versions[config] = version
+        config = tuple("index_1" if p == "bge_large_en_v1.5" else p for p in parts[:i] + tail)
+        rank = (version, "index_1" in parts)
+        if rank > versions.get(config, (0, False)):
+            versions[config] = rank
             runs[config] = metrics.parent
     return runs
 
@@ -68,27 +70,43 @@ def load_predictions(run_dir: Path) -> dict[str, bool]:
     with open(run_dir / "predictions.jsonl") as f:
         for line in f:
             d = json.loads(line)
+            if d["question"] in preds:
+                raise ValueError(f"Duplicate question in {run_dir}")
             preds[d["question"]] = bool(d["is_correct"])
+    if len(preds) != 1273:
+        raise ValueError(f"Expected 1,273 unique predictions in {run_dir}")
     return preds
 
 
-def paired_stats(pred_a: dict[str, bool], pred_b: dict[str, bool], n_boot: int = 10_000, seed: int = 42):
+def paired_stats(pred_a: dict[str, bool], pred_b: dict[str, bool], n_boot: int = 100_000, seed: int = 42):
     """McNemar exact p-value and bootstrap CI for accuracy(B) - accuracy(A)."""
-    questions = sorted(set(pred_a) & set(pred_b))
+    if set(pred_a) != set(pred_b) or not pred_a:
+        raise ValueError("Paired comparisons require identical, nonempty question sets")
+    questions = sorted(pred_a)
     a = np.array([pred_a[q] for q in questions], dtype=bool)
     b = np.array([pred_b[q] for q in questions], dtype=bool)
 
     b01 = int((b & ~a).sum())  # B right, A wrong
     c10 = int((a & ~b).sum())  # A right, B wrong
     if b01 + c10 > 0:
-        p_mcnemar = binomtest(min(b01, c10), b01 + c10, 0.5).pvalue
+        # Exact two-sided McNemar p-value for a Binomial(discordant, 0.5).
+        discordant = b01 + c10
+        lower_tail_numerator = sum(math.comb(discordant, i) for i in range(min(b01, c10) + 1))
+        p_mcnemar = min(1.0, 2 * lower_tail_numerator / (2 ** discordant))
     else:
         p_mcnemar = 1.0
 
     rng = np.random.default_rng(seed)
     n = len(questions)
     a_f, b_f = a.astype(float), b.astype(float)
-    deltas = (b_f[rng.integers(0, n, (n_boot, n))] - a_f[rng.integers(0, n, (n_boot, n))]).mean(axis=1)
+    # Resample question indices once so each bootstrap replicate preserves the
+    # paired design (both systems are evaluated on the same sampled questions).
+    bootstrap_deltas = []
+    for start in range(0, n_boot, 256):
+        size = min(256, n_boot - start)
+        indices = rng.integers(0, n, (size, n))
+        bootstrap_deltas.append((b_f[indices] - a_f[indices]).mean(axis=1))
+    deltas = np.concatenate(bootstrap_deltas)
     lo, hi = np.percentile(deltas, [2.5, 97.5])
     return {
         "n": n,
@@ -111,8 +129,16 @@ def main() -> None:
     ap.add_argument("--model-b", default="llama3_med42_8b", help="Comparison model dir name")
     ap.add_argument("--alpha", type=float, default=0.05)
     ap.add_argument("--csv", type=str, default=None, help="Optional CSV output path")
+    ap.add_argument(
+        "--results-dir",
+        type=Path,
+        default=DEFAULT_BASE,
+        help="Root directory containing the NO_RAG and RAG result trees",
+    )
     args = ap.parse_args()
 
+    global BASE
+    BASE = args.results_dir.expanduser().resolve()
     runs_a, runs_b = find_runs(args.model_a), find_runs(args.model_b)
     both = sorted(set(runs_a) & set(runs_b), key=lambda c: (len(c), c))
     only_a = set(runs_a) - set(runs_b)

@@ -1,0 +1,5 @@
+Paired question bootstrap replicates: 100000
+Seed: 42
+Exact two-sided McNemar tests; nominal exploratory p-values.
+Component intervals hold matched configuration pairs fixed.
+Recorded coarse strata are not active components; repeated observations retain their weight.

@@ -1,0 +1,9 @@
+group,run_id,model,prompt,embedding,retrieval,reranker,reformulation,correct,n,accuracy_percent,wilson_ci_low_percent,wilson_ci_high_percent,elapsed_seconds
+A,R053,llama3_med42_8b,zero_shot,index_1,dense,reranker_off,reformulation,758,1273,59.54438334642577,56.82342630283552,62.20791062010851,748.88498878479
+A,R096,llama3_med42_8b,zero_shot,medembed,dense,reranker_off,reformulation,762,1273,59.8586017282011,57.14009778832712,62.517785206154166,752.9708857536316
+B,R060,llama3_med42_8b,zero_shot,index_1,dense,reranker_on,reformulation,763,1273,59.937156323644935,57.21928354605682,62.59523596630879,834.921909570694
+B,R105,llama3_med42_8b,zero_shot,medembed,dense,reranker_on,reformulation,763,1273,59.937156323644935,57.21928354605682,62.59523596630879,836.698962688446
+C,R037,llama3_med42_8b,zero_shot,index_1,dense,reranker_off,reformulation,764,1273,60.015710919088775,57.29847647210209,62.672679558147834,761.4987754821777
+C,R072,llama3_med42_8b,zero_shot,medembed,dense,reranker_off,reformulation,756,1273,59.387274155538094,56.6651333927756,62.0529304943998,758.7193171977997
+D,R045,llama3_med42_8b,zero_shot,index_1,dense,reranker_on,reformulation,766,1273,60.172820109976435,57.45688385721507,62.82754520880346,844.5230457782745
+D,R085,llama3_med42_8b,zero_shot,medembed,dense,reranker_on,reformulation,763,1273,59.937156323644935,57.21928354605682,62.59523596630879,833.916583776474

@@ -1,3 +1,18 @@
+# MedRAG Research
+
+## Manuscript reproduction
+
+See [the reproduction guide](reproducibility/README.md) for installation,
+example preprocessing and evaluation commands, the source provenance record,
+and scripts that regenerate the revised tables from bundled, text-free
+correctness data. The analysis package covers 61 zero-shot and 12 selected CoT
+evaluations and 28 matched Llama model comparisons.
+
+The source archive excludes manuscript drafts, reviewer material, textbook text,
+raw prediction files containing third-party text, and legacy experimental scripts.
+Exclusions are defined in [.gitattributes](.gitattributes); they do not remove
+files already present in Git history or in a Git clone.
+
 ## Project Description
 
 **MedRAG Research** is a comprehensive research framework for medical question-answering systems powered by Retrieval-Augmented Generation (RAG). It combines advanced retrieval techniques with medical-domain-specific language models to deliver evidence-based answers grounded in medical literature.

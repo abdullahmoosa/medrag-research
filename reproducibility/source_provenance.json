@@ -1,0 +1,180 @@
+{
+  "prepared_date": "2026-10-28",
+  "source_reference_commit": "2e4a7076571bbf2f97af038533f5386ac0c2bbdf",
+  "initial_source_commit": "f0855e4",
+  "run_commits_recorded_in_metrics": false,
+  "model_metadata": {
+    "llama3": "llama3:8b",
+    "med42": "thewindmom/llama3-med42-8b:latest",
+    "gemma_author_confirmed": "gemma3:12b-it-qat",
+    "reranker_author_confirmed": "BAAI/bge-reranker-large",
+    "historical_immutable_digests": null,
+    "historical_ollama_version": null,
+    "historical_precision_details": null,
+    "generation_seed_recorded": false
+  },
+  "pipeline_sources": [
+    {
+      "path": "src/rechunk_pipeline/__init__.py",
+      "sha256": "3581b95e6dd58314ba0999f03c5fc1fed0b06a204f1a852e0d7869fd60adbad1",
+      "initial_source_sha256": "3581b95e6dd58314ba0999f03c5fc1fed0b06a204f1a852e0d7869fd60adbad1",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/clean_text.py",
+      "sha256": "ca85cb1542828b4c1a36638ab7790267b9cc26e53fa93273467981923037931b",
+      "initial_source_sha256": "ca85cb1542828b4c1a36638ab7790267b9cc26e53fa93273467981923037931b",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/config.py",
+      "sha256": "2cff6a3b983e259a319f2df3e08b4f520e39c39765153cb5b0ae140341ecb4ad",
+      "initial_source_sha256": "2cff6a3b983e259a319f2df3e08b4f520e39c39765153cb5b0ae140341ecb4ad",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/config_match_previous.py",
+      "sha256": "ea642446c6c31e04f89e824649d608adcd7357ec268f9c4eb8c0e0a41e816f73",
+      "initial_source_sha256": "ea642446c6c31e04f89e824649d608adcd7357ec268f9c4eb8c0e0a41e816f73",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/example_config.py",
+      "sha256": "bfa4482fd2039abd5e5512b5a050024812ddcda9fd0770b6dbe5f3764ec32397",
+      "initial_source_sha256": "bfa4482fd2039abd5e5512b5a050024812ddcda9fd0770b6dbe5f3764ec32397",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/example_usage.py",
+      "sha256": "bee86ccc474ab225d5942db616d5cfa30ea9b89781a44ab8a8cc835a713dc011",
+      "initial_source_sha256": "bee86ccc474ab225d5942db616d5cfa30ea9b89781a44ab8a8cc835a713dc011",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/index_builder.py",
+      "sha256": "e3c94e528918718930536071ef2f53e1b1bccdeb81c5cdd505722a76f3618d24",
+      "initial_source_sha256": "e3c94e528918718930536071ef2f53e1b1bccdeb81c5cdd505722a76f3618d24",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/metadata.py",
+      "sha256": "aa01978a6742b50721699ce005e7696cb2c9837a2d59f5abba87bd9e5201113f",
+      "initial_source_sha256": "aa01978a6742b50721699ce005e7696cb2c9837a2d59f5abba87bd9e5201113f",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/overlap_example.py",
+      "sha256": "c8e3529cdb8e3cc90a73393c315a1f1b32d2b12b998f62e82c2452c25f750b76",
+      "initial_source_sha256": "c8e3529cdb8e3cc90a73393c315a1f1b32d2b12b998f62e82c2452c25f750b76",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/run_experiment.py",
+      "sha256": "a3c031241457b5c4fe235baa0843f22017eb7f95852a843ed91c67513e5f7d03",
+      "initial_source_sha256": "a3c031241457b5c4fe235baa0843f22017eb7f95852a843ed91c67513e5f7d03",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/semantic_chunker.py",
+      "sha256": "bcb8437208bb521f56a3dc8f21c4a5c24535ea5174093f4d593d9c57ef7569c5",
+      "initial_source_sha256": "bcb8437208bb521f56a3dc8f21c4a5c24535ea5174093f4d593d9c57ef7569c5",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/split_structure.py",
+      "sha256": "864640b0d1b68e88985e16ab14d98ef9c9689365399bcda7ec118582b23ca488",
+      "initial_source_sha256": "864640b0d1b68e88985e16ab14d98ef9c9689365399bcda7ec118582b23ca488",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rechunk_pipeline/test_pipeline.py",
+      "sha256": "2e106847d2e1fa1efae5e4e1e538e022f18bdcf22d9de33391702d1043954535",
+      "initial_source_sha256": "2e106847d2e1fa1efae5e4e1e538e022f18bdcf22d9de33391702d1043954535",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/__init__.py",
+      "sha256": "79da13810fec0ccbb34a2b8336ea53b3723fb9f6fb0d7fdfe95012110aa23cf5",
+      "initial_source_sha256": "79da13810fec0ccbb34a2b8336ea53b3723fb9f6fb0d7fdfe95012110aa23cf5",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/chunk_schema.py",
+      "sha256": "39b387d987dc6a25b03c77c53d28bd16c793d179668b8d18139d52851f51e59d",
+      "initial_source_sha256": "39b387d987dc6a25b03c77c53d28bd16c793d179668b8d18139d52851f51e59d",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/cli.py",
+      "sha256": "9b4b7b32f80dbc6d68d209da06d357af642ee94437a5a96e8f953a5da954b716",
+      "initial_source_sha256": "da0df235d4ba2d150c54eb43d45420d8f55f79a1ba00214c92df85798adb787e",
+      "identical_to_initial_source": false
+    },
+    {
+      "path": "src/rag_evaluation/config.py",
+      "sha256": "202de2877a1032d048738d37db8a1fb210f992c0f62afe014e9b842e689726bc",
+      "initial_source_sha256": "202de2877a1032d048738d37db8a1fb210f992c0f62afe014e9b842e689726bc",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/embedding_client.py",
+      "sha256": "afd9bef9be759b81527c6bd59149ba052a76967d7f0d29864cf1e8d06aaebbdd",
+      "initial_source_sha256": "afd9bef9be759b81527c6bd59149ba052a76967d7f0d29864cf1e8d06aaebbdd",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/evaluation.py",
+      "sha256": "2a13511a71cbf758d0ba6c60f6eac4d5905c5b4a279d32fa4dc8029f3fc86c91",
+      "initial_source_sha256": "2a13511a71cbf758d0ba6c60f6eac4d5905c5b4a279d32fa4dc8029f3fc86c91",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/examples.py",
+      "sha256": "e6b6fa368ae3d4983f8adb8ce3b65ae347036ee82ff77e5197d6ad34a0dda4e8",
+      "initial_source_sha256": "e6b6fa368ae3d4983f8adb8ce3b65ae347036ee82ff77e5197d6ad34a0dda4e8",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/fusion.py",
+      "sha256": "edba63b2cab67d5b27fb4e40333603799c247860fb5ffa1777fad1d5d55dd952",
+      "initial_source_sha256": "edba63b2cab67d5b27fb4e40333603799c247860fb5ffa1777fad1d5d55dd952",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/hyde.py",
+      "sha256": "65126c00d6388ecc3999bb02dbd9b5455728aa1548cc459af2875f8eb32b7209",
+      "initial_source_sha256": "65126c00d6388ecc3999bb02dbd9b5455728aa1548cc459af2875f8eb32b7209",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/index_loader.py",
+      "sha256": "efe203335253586e2965a8521b0bc87e8b0627055eee65366f44e11035ec7a24",
+      "initial_source_sha256": "efe203335253586e2965a8521b0bc87e8b0627055eee65366f44e11035ec7a24",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/metrics.py",
+      "sha256": "78686056fab762ed60d63ba2432a7aa5985b5010717a5283d22e9a860523c28e",
+      "initial_source_sha256": "78686056fab762ed60d63ba2432a7aa5985b5010717a5283d22e9a860523c28e",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/query_reformulation.py",
+      "sha256": "8c616d50576e81398f9705ed5469aee0bf302204561509862762861618581253",
+      "initial_source_sha256": "8c616d50576e81398f9705ed5469aee0bf302204561509862762861618581253",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/retrieval.py",
+      "sha256": "72573448372288c73b4dffd69b7bd1fc21ed102569fa9d54cb12f27c521c0cbf",
+      "initial_source_sha256": "72573448372288c73b4dffd69b7bd1fc21ed102569fa9d54cb12f27c521c0cbf",
+      "identical_to_initial_source": true
+    },
+    {
+      "path": "src/rag_evaluation/tests.py",
+      "sha256": "52c553fb3b1123bced803e4d129e125de145a93f13ec9d93efd17f2f16dea425",
+      "initial_source_sha256": "52c553fb3b1123bced803e4d129e125de145a93f13ec9d93efd17f2f16dea425",
+      "identical_to_initial_source": true
+    }
+  ]
+}

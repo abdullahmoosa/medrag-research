@@ -1,0 +1,13 @@
+name: medrag
+channels:
+  - conda-forge
+dependencies:
+  - numpy=1.26
+  - faiss-gpu=1.7.4
+  - pytorch-cuda=12.1
+  - pip
+  - pytorch=2.1[build=cuda*]
+  - torchaudio=2.1
+  - python=3.10
+  - torchvision=0.16
+prefix: /home/ser/mambaforge/envs/medrag
